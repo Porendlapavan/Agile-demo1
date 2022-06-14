@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blogs-Agile Acccounting</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold;">Book a chat</h1>
+            <p>To find out how agile-accounting can assist your firm, please enter your details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <div style="background-color:#4a0466;height: 1rem;"></div>
+    <header class="main_header" style="background-color:#8ed1fc;">
+        <div class="container">
+            <div class="outer-flex">
+                <a style="padding:0px;" href="index.html"><img src="logoagilel.png"
+                        style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;"></a>
+                <nav class="navbar">
+                    <a href="#" class="toggle-buttons" style="color: #4a0466; z-index:1;">
+                        <i class="fas fa-bars"></i></a>
+                    <div class="navbar-links">
+                        <ul>
+                            <a href="#" class="close-button">&times;</a>
+                            <li><a style="font-size:0.7rem;text-align: left;" onclick="myfunction1()" class=" colr"
+                                    href="#">company
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown" class="text" style="z-index:1;">
+                                    <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile
+                                            Accounting
+                                            difference</a></li>
+                                    <li><a style="text-align: left;" href="meetourtalent.html">Meet our talent</a></li>
+                                    <li><a style="text-align: left;" href="who_we_are.html">Who we are</a></li>
+                                    <li><a style="text-align: left;" href="contact us.html">contact us</a></li>
+                                    <li><a style="text-align: left;" href=""><i class='fas fa-external-link-alt'></i>
+                                            AGILE Ac careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" onclick="myfunction2()"
+                                    class="colr" href="#">Solutions <i class="arrow down"
+                                        style="font-size: smaller;"></i></a>
+                                <ul id="myDropdown1" class="text" style="z-index:1;">
+                                    <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
+                                    <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
+                                    <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
+                                    <li><a style="text-align: left;" href="cpa.html">CPA</a></li>
+                                    <li><a style="text-align: left;" href="virtualassisant.html">Virtual assistant</a>
+                                    </li>
+                                    <li><a style="text-align: left;" href="local trained talent.html">Locally Trained
+                                            Talent</a></li>
+                                    <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.7rem;text-align:left;" onclick="myfunction3()" href="#"
+                                    class="colr">Resources
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown2" class="text" style="z-index:1;">
+
+
+                                    <li
+                                        style="text-align:left;font-weight: bold;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                        News and Events
+                                    </li>
+                                    <li><a style="text-align: left;" href="">Announcements</a></li>
+                                    <li
+                                        style="text-align: left;font-weight: bold;  ;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                        Education</li>
+                                    <li><a style="text-align: left;" href="bolgs.html">Blog</a></li>
+                                    <li><a style="text-align: left;" href="">Podcasts</a></li>
+
+
+                                    <li style="border-radius:0px 0px 0 0;text-align: left;  font-weight:
+                      bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
+                                        Free Tools
+                                    </li>
+                                    <li><a style="text-align: left;" href="book a statagy session.html">Book a
+                                            strategy session</a></li>
+                                    <li><a style="text-align: left;" href="checklist.html">Outsourcing checklist</a>
+                                    </li>
+                                    <li><a style="text-align: left;" href="remote accounting team.html">Remote team
+                                            report</a></li>
+                                    <li><a style="text-align: left;" href="">Virtual assistant report</a></li>
+                                    <li><a style="text-align: left;" href="retainandgrow.html">Retain and grow talent
+                                            guide</a></li>
+                                    <li><a style="text-align: left;" href="scaleandgrow.html">Scale and grow your
+                                            accounting
+                                            firm</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="searchbut">
+                                <label class="topnov" style="background:none;">
+                                    <span class="screen-reader-text"></span>
+                                    <input type="search" class="search-field" placeholder="Search" value="" name="s"
+                                        title="Search for:" style="border-radius:0.7rem;padding:2px; width:
+                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
+                                </label>
+                                <button type="submit" class="search-submit topnov" value="Search"
+                                    style="border:none;outline:none;background:none"><span class="sr-only">Search</span>
+                                    <img src="https://toaglobal.com/wp-content/themes/generatepress_child/images/search.svg"
+                                        aria-hidden="true" alt="Search icon" style="height: 15px;color:white;">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="row ">
+                <div class="col-lg-6 col-md-12 col-sm-12" id=" header_heading" style="align-self: center;">
+
+                    <h1 style="color: #4a0466;">Resources for your firm
+                    </h1>
+                    <p id="header_para">
+                        Our blog is your one-stop shop for actionable articles on running and growing an accounting or
+                        bookkeeping firm; recruiting, managing and retaining a global team; and where you can learn more
+                        about the latest industry trends.
+                    </p>
+                    <div class="button1"><button class="buttonstyl" onclick="toggleForm()"><span>Book a
+                                chat</span></button></div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 " style="text-align: center;align-self: flex-end;">
+                    <img id="header_image1"
+                        src="https://toaglobal.com/wp-content/uploads/2021/07/Hero-gentlemen-in-tie.png.webp"
+                        style="max-width:370px;width:100%;">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href="blogsmodel.html"><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2018/01/Understanding-Offshoring-Benefits-Risks-and-Challenges_900x675-477x300.jpg.webp"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="blogsmodel.html">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    Outsourced Accounting Benefits, Risks and Challenges
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    More and more accounting firms are considering outsourced accounting as one
+                                    component of
+                                    their delivery model. We unpack the pros and cons.
+                                </p>
+                                <p style="font-size:small;color:black;">20 Jan 2022</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2022/05/featured-image-477x300.jpg.webp"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    Lessons from the Understanding the 3 Pillars of Cyber Security Webinar
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    If we were to ask you to think about the roles and responsibilities of accounting
+                                    and bookkeeping practitioners today, we’d hazard the guess that cyber security isn’t
+                                    the first thing…
+                                </p>
+                                <p style="font-size:small;color:black;">18 May 2022</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2022/03/importance-of-engagement-477x300.jpg.webp"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    The importance of engagement letters for accountants and advisorss
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    Accountants and advisors know that engagement letters form a critical part of an
+                                    effective client relationship. For most of them, it’s a standard procedure — even
+                                    considered best practice...
+                                </p>
+                                <p style="font-size:small;color:black;">02 Mar 2022</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2022/01/image-2-477x300.jpg"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    How to be more productive in your accounting job </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    Discover the 4 things you can do to improve your output at work without burning
+                                    yourself out.
+                                </p>
+                                <p style="font-size:small;color:black;">20 Jan 2022</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2022/01/outsourced_accounting_2022-scaled-1-477x300.jpg"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    Accounting trends to pay attention to in 2022
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    We take a look at what’s expected to generate buzz in the accounting industry in
+                                    2022.
+                                </p>
+                                <p style="font-size:small;color:black;">12 Jan 2022</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2021/11/hero-image-477x300.jpg"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    How to impress in the first week at a new accounting job
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    Discover why first impressions are so important and how you can wow your colleagues
+                                    at your new accounting job.
+                                </p>
+                                <p style="font-size:small;color:black;">02 Dec 2021</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2021/11/outsourced_accounting_remote_team_concept-scaled-1-477x300.jpeg"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    The accountant’s guide to managing a remote team
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    Managing your remote team just got easier with this guide
+                                </p>
+                                <p style="font-size:small;color:black;">25 Nov 2021</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2021/11/outsourced_accounting_motivation-scaled-1-477x300.jpeg"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    Motivating remote teams: a cheat sheet
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    We’ve identified four things managers might inadvertently be doing that’s imUnlock
+                                    the keys to keeping your remote team members engaged, productive and successful.
+                                </p>
+                                <p style="font-size:small;color:black;">11 Nov 2021</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2021/11/outsourced_accounting_leadership-477x300.jpeg"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    When managing people you should avoid these 4 things
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    We’ve identified four things managers might inadvertently be doing that’s impacting
+                                    their team and deliverables.
+                                </p>
+                                <p style="font-size:small;color:black;">04 Nov 2021</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2021/10/outsourced_accounting_leadership-477x300.jpeg.webp"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    How to develop people management skills
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    Developing your people management skills can help boost your firm’s bottom line.
+                                </p>
+                                <p style="font-size:small;color:black;">28 Oct 2021</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2021/10/image1-2-477x300.jpg.webp"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    The best accounting career advice you’ll ever receive
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    Gain expert insights on levelling up your accounting career.
+                                </p>
+                                <p style="font-size:small;color:black;">21 Oct 2021</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text " style="padding:20px;">
+                    <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
+                        <a style="padding:0px;" href=""><img class="col " style="padding:0%; "
+                                src="https://toaglobal.com/wp-content/uploads/2021/10/image2-1-477x300.jpg.webp"></a>
+                        <div style="text-align:left;">
+                            <a style="padding:0px;" href="">
+                                <h4 style="color:blueviolet;padding-bottom:10px;padding-top:7px;">
+                                    A crash course on people experience for accounting firms
+                                </h4>
+                                <p style="padding-bottom:10px;color: black;">
+                                    Not sure what people experience is or what it’s all about? Not to worry – we give
+                                    you the scoop in this article.
+                                </p>
+                                <p style="font-size:small;color:black;">14 Oct 2021</p>
+                        </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connecting pages nav bar -->
+    <div style="background-color: #66058c;">
+        <div class="container">
+            <div class="row">
+                <a style="color:white;font-size: 1rem;" href="index.html">Home </a>
+                <a style="color:white;font-size: 1rem;">>> Blogs
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of connecting pages nav bar -->
+    <!----------footer-------->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-2" style="padding:25px;">
+
+                    <a href="index.html"><img src="logoagilel.png" style="width:60%; padding: 0px;"></a>
+                    <p style="font-size: 0.8rem;"><i class="fa fa-location-arrow"></i> Location comes here</p>
+                    <p style="font-size: 0.8rem;"><i class="fa fa-phone-alt "></i> <a href="tel:+1 (408)214-9890"
+                            target="" class="in-grid-item cardClick" data-wpel-link="internal"
+                            style="font-size:0.7rem;color: white;padding:0%;">
+                            +1-(408) 214-9890</a>
+                    </p>
+
+                    <p style="font-size: 0.8rem;"><i class="fa fa fa-envelope"></i> <a href="mailto:info@agileac.com"
+                            style="font-size:0.7rem;color: white;padding:0%;">
+                            info@agileac.com </a> </p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6"></div>
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Company</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a style="padding:0px;width: auto;" href="The Agile ac difference.html">The
+                                AGILE
+                                Ac difference</a>
+                        </li>
+                        <li><a href="meetourtalent.html">Meet our talent</a></li>
+                        <li><a href="who_we_are.html">Who we are</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Solutions</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="accountant.html">Accountant</a></li>
+                        <li><a href="cpa.html">CPA</a></li>
+                        <li><a href="Bookkeeper.html">Bookkeeper</a></li>
+                        <li><a href="administrator.html">Administrator</a></li>
+                        <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                        <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
+                        <li><a href="All solutions.html">All solutions</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Resources</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="book a statagy session.html">Book a strategy session</a></li>
+                        <li><a href="checklist.html">Outsourcing checklist</a></li>
+                        <li><a href="remote accounting team.html">Remote team report</a></li>
+                        <li><a href="">Virtual assistant guide</a></li>
+                        <li><a href="retainandgrow.html">Retain and grow talent guide</a></li>
+                        <li><a href="scaleandgrow.html">Scale and grow your accounting firm</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">
+                        Agile Accounting Links
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> Ab² Institute of accounting</a></li>
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> AGILE Ac careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" style="text-align:left;">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <p class=" text-center flo" style="font-size: 0.7rem;">All Rights Reserved Agile Accounting @2022
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12" style="float:flex-end;">
+                    <a href=" privacypolicy.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Privacy
+                        policy</a>
+                    <a href="Accessibility Statement.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Accessibility
+                        statement</a>
+                    <a href="contact us.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Contact
+                        us</a>
+                    <a href="Terms of Use.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;color: white;">Terms of
+                        use</a>
+                </div>
+            </div>
+            <ul class="social_footer_ul">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/agile-accounting/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- .site-footer -->
+    <script src="app.js">
+    </script>
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
+    <script>
+        function classtoggle() {
+            const navs = document.querySelectorAll('.navbar-links')
+
+            navs.forEach(nav => nav.classList.remove('navbar-links-active'));
+        }
+
+        document.querySelector('.close-button')
+            .addEventListener('click', classtoggle);
+    </script>
+    <script src="form.js"></script>
+    <script>
+        // drowdown open and close on click
+
+        function myfunction1() {
+            document.getElementById("myDropdown").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction2() {
+            document.getElementById("myDropdown1").classList.toggle("show1");
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction3() {
+            document.getElementById("myDropdown2").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+        }
+    </script>
+</body>
+
+</html>

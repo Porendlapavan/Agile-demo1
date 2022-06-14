@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outsourced Accounting Benefits, Risks and Challenges</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <style>
+        body h4 {
+            color: rgb(107, 107, 159);
+        }
+    </style>
+</head>
+<!-- -------------------g form------------------- -->
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold;">Book a chat</h1>
+            <p>To find out how agile-accounting can assist your firm, please enter your details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <div style="background-color:#4a0466;height: 1rem;"></div>
+
+    <header class="main_header">
+        <div class="container">
+            <div class="outer-flex">
+                <a style="padding:0px;" href="index.html"><img src="logoagilel.png"
+                        style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;"></a>
+                <nav class="navbar">
+                    <a href="#" class="toggle-buttons" style="color: #4a0466; z-index:1;">
+                        <i class="fas fa-bars"></i></a>
+                    <div class="navbar-links">
+                        <ul>
+                            <a href="#" class="close-button">&times;</a>
+                            <li><a style="font-size:0.7rem;text-align: left;" onclick="myfunction1()" class=" colr"
+                                    href="#">company
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown" class="text" style="z-index:1;">
+                                    <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile
+                                            Accounting
+                                            difference</a></li>
+                                    <li><a style="text-align: left;" href="meetourtalent.html">Meet our talent</a></li>
+                                    <li><a style="text-align: left;" href="who_we_are.html">Who we are</a></li>
+                                    <li><a style="text-align: left;" href="contact us.html">contact us</a></li>
+                                    <li><a style="text-align: left;" href=""><i class='fas fa-external-link-alt'></i>
+                                            AGILE Ac careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" onclick="myfunction2()"
+                                    class="colr" href="#">Solutions <i class="arrow down"
+                                        style="font-size: smaller;"></i></a>
+                                <ul id="myDropdown1" class="text" style="z-index:1;">
+                                    <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
+                                    <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
+                                    <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
+                                    <li><a style="text-align: left;" href="cpa.html">CPA</a></li>
+                                    <li><a style="text-align: left;" href="virtualassisant.html">Virtual assistant</a>
+                                    </li>
+                                    <li><a style="text-align: left;" href="local trained talent.html">Locally Trained
+                                            Talent</a></li>
+                                    <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.7rem;text-align:left;" onclick="myfunction3()" href="#"
+                                    class="colr">Resources
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown2" class="text" style="z-index:1;">
+
+
+                                    <li
+                                        style="text-align:left;font-weight: bold;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                        News and Events
+                                    </li>
+                                    <li><a style="text-align: left;" href="">Announcements</a></li>
+                                    <li
+                                        style="text-align: left;font-weight: bold;  ;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                        Education</li>
+                                    <li><a style="text-align: left;" href="bolgs.html">Blog</a></li>
+                                    <li><a style="text-align: left;" href="">Podcasts</a></li>
+
+
+                                    <li style="border-radius:0px 0px 0 0;text-align: left;  font-weight:
+                      bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
+                                        Free Tools
+                                    </li>
+                                    <li><a style="text-align: left;" href="book a statagy session.html">Book a
+                                            strategy session</a></li>
+                                    <li><a style="text-align: left;" href="checklist.html">Outsourcing checklist</a>
+                                    </li>
+                                    <li><a style="text-align: left;" href="remote accounting team.html">Remote team
+                                            report</a></li>
+                                    <li><a style="text-align: left;" href="">Virtual assistant report</a></li>
+                                    <li><a style="text-align: left;" href="retainandgrow.html">Retain and grow talent
+                                            guide</a></li>
+                                    <li><a style="text-align: left;" href="scaleandgrow.html">Scale and grow your
+                                            accounting
+                                            firm</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="searchbut">
+                                <label class="topnov" style="background:none;">
+                                    <span class="screen-reader-text"></span>
+                                    <input type="search" class="search-field" placeholder="Search" value="" name="s"
+                                        title="Search for:" style="border-radius:0.7rem;padding:2px; width:
+                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
+                                </label>
+                                <button type="submit" class="search-submit topnov" value="Search"
+                                    style="border:none;outline:none;background:none"><span class="sr-only">Search</span>
+                                    <img src="https://toaglobal.com/wp-content/themes/generatepress_child/images/search.svg"
+                                        aria-hidden="true" alt="Search icon" style="height: 15px;color:white;">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12" id=" header_heading" style="align-self: center;">
+
+                    <h1 style="color: #4a0466;">Outsourced Accounting Benefits, Risks and
+                        Challenges</h1>
+                    <p style="font-size: 1rem;" id="header_para">
+                        Posted on May 20, 2022
+                    </p>
+                    <div sty;e="margin-bottom:2rem;" class="button1"><button class="buttonstyl"
+                            onclick="toggleForm()"><span>Book a
+                                chat</span></button></div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 " style="text-align: center;align-self: flex-end;">
+                    <img id="header_image1"
+                        src="https://toaglobal.com/wp-content/uploads/2018/01/Understanding-Offshoring-Benefits-Risks-and-Challenges_900x675.jpg.webp"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="page" class="hfeed site grid-container container grid-parent">
+        <div id="content" class="site-content">
+            <!-- post single -->
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main">
+                    <article id="post-1815" class="single-general default" itemtype="https://schema.org/CreativeWork"
+                        itemscope="">
+                        <div class="inside-article">
+                            <div class="entry-content" itemprop="text">
+                                <div id="theContent" class="row the-content" style="padding:30px;">
+                                    <div class="col-xl-8 col-md-8">
+                                        <div class="entry-content-content single-content-general">
+
+                                            <p>As more and more accounting firms are considering outsourcing as one
+                                                component of their delivery model, a number of key issues have
+                                                arisen which can influence success or failure.</p>
+
+
+
+                                            <p>While it has become much easier these days, offshoring is
+                                                not&nbsp;a&nbsp;magic pill for firms that want to enhance efficiency
+                                                and improve capacity.
+                                                Planning is
+                                                crucial.</p>
+
+
+
+                                            <h4 id="diverse-range-of-benefits"><a style="padding:0px;" href=""
+                                                    data-wpel-link="internal">Diverse Range of Benefits</a></h4>
+
+
+
+                                            <p>The most obvious benefit of offshoring is pure cost saving. Business
+                                                budgets in Australia, New Zealand, the US and Canada stretch further
+                                                when employing offshore in the Philippines, easing pressure on those
+                                                onshore in a number of key areas.&nbsp;&nbsp;&nbsp;</p>
+
+
+
+                                            <p>Outsourcing accounting can help firms:</p>
+
+
+                                            <ol style="padding-left:30px;">
+                                                <li style="list-style-type: disc;">Operate more efficiently</li>
+                                                <li style="list-style-type: disc;">Access a more diverse skill set</li>
+                                                <li style="list-style-type: disc;">Add more value to onshore work</li>
+                                                <li style="list-style-type: disc;">Retain both onshore and offshore
+                                                    employees</li>
+                                                <li style="list-style-type: disc;">Ultimately, grow and strengthen your
+                                                    business</li>
+                                            </ol>
+
+
+
+                                            <!-- <div class="wp-block-image">
+                                                <figure class="aligncenter size-full">
+                                                    <picture class="wp-image-11696">
+                                                        <source type="image/webp"
+                                                            srcset="https://toaglobal.com/wp-content/uploads/2022/05/MTS-4742_Image-Update_100kb.jpg.webp 600w, https://toaglobal.com/wp-content/uploads/2022/05/MTS-4742_Image-Update_100kb-300x200.jpg.webp 300w"
+                                                            sizes="(max-width: 600px), 100vw, 600px">
+                                                        <img width="600" height="400"
+                                                            src="https://toaglobal.com/wp-content/uploads/2022/05/MTS-4742_Image-Update_100kb.jpg"
+                                                            alt="Outsourced accounting fills a great skills shortage"
+                                                            srcset="https://toaglobal.com/wp-content/uploads/2022/05/MTS-4742_Image-Update_100kb.jpg 600w, https://toaglobal.com/wp-content/uploads/2022/05/MTS-4742_Image-Update_100kb-300x200.jpg 300w"
+                                                            sizes="(max-width: 600px) ,100vw, 600px">
+                                                    </picture>
+                                                </figure>
+                                            </div> -->
+
+
+
+                                            <h4 id="diverse-range-of-benefits">Outsourced Accounting
+                                                offers Lower Costs and Competitive Pressures</h4>
+
+
+
+                                            <p>Firms choosing the offshore route have indicated that their main
+                                                motivation for adapting this business model is lower costs.
+                                                Contending pressures brought about by factors like, increased
+                                                competition and smaller client and customer bases also drive
+                                                companies to employ offshoring’s cost-cutting practices.</p>
+
+
+
+                                            <p>Now firms can either pass on these savings to their clients so they
+                                                can offer more for less or keep their current prices and enjoy
+                                                larger margins.</p>
+
+
+
+                                            <h4>Access to a
+                                                Diverse Pool of Skilled Employees</h4>
+
+
+
+                                            <p>Skill shortage is a pressing factor affecting the current global
+                                                accounting landscape. In many regions, companies have sufficient
+                                                access to a candidate pool, but not to those who possess the
+                                                training or experience in the skill sets required for specific
+                                                roles.</p>
+
+
+
+                                            <p>One common scenario is this: you receive 30 resumes for an accountant
+                                                role and discover that 29 are unsuitable. The one that you find to
+                                                be suitable then costs far more than you budgeted.</p>
+
+
+
+                                            <p>This uncomfortable hurdle can be overcome by tapping into the large
+                                                pool of offshore talent, specifically in the Philippines. Outsourced
+                                                accounting provides firms access to a more diverse pool of skilled
+                                                employees so they can enjoy:</p>
+
+
+
+                                            <ol style="padding-left:30px;">
+                                                <li style="list-style-type: disc;">Specialist knowledge</li>
+                                                <li style="list-style-type: disc;">Resources that may not be available
+                                                    locally</li>
+                                                <li style="list-style-type: disc;">Niche skills</li>
+                                                <li style="list-style-type: disc;">Better quality compliance work</li>
+                                                <li style="list-style-type: disc;">More time for onshore employees so
+                                                    they can focus on key
+                                                    client-facing tasks</li>
+                                            </ol>
+
+
+
+                                            <p>Building strong offshore teams allows companies to enjoy levels of
+                                                workforce flexibility that are difficult to achieve with just an
+                                                in-house team.</p>
+
+
+
+                                            <h4 id="higher-value-work-and-employee-retention">Higher Value
+                                                Work and Employee Retention</h4>
+
+
+
+                                            <p>When time-consuming compliance tasks are taken off the shoulders of
+                                                onshore employees, your onshore staff are able to focus on more
+                                                revenue-generating tasks.</p>
+
+
+
+                                            <p>Onshore accountants become empowered to engage more with clients and
+                                                can become trusted advisors. They can better provide financial
+                                                advice because they now have more time to analyse and report on
+                                                important data.</p>
+
+
+
+                                            <h4 id="offshoring-as-part-of-a-long-term-business-strategy">Outsourcing
+                                                Accountants as Part of a Long-Term Business Strategy</h4>
+
+
+
+                                            <!-- <p><iframe loading="lazy" src="https://www.youtube.com/embed/sD_T7xXyQjA"
+                                                    width="650" height="400" allowfullscreen="allowfullscreen"></iframe>
+                                            </p> -->
+
+
+
+                                            <p>Offshoring is becoming easier and easier with technological
+                                                advancements. Combine this with the right amount of preparation and
+                                                a clear strategy, firms can enjoy the growth they aim for.</p>
+
+
+
+                                            <ol style="padding-left:30px;">
+                                                <li style="list-style-type: disc;">Local team members (and executives)
+                                                    need to be supportive and
+                                                    committed to this business model to ensure the success of any
+                                                    offshoring.</li>
+                                                <li style="list-style-type: disc;">Strategic planning from the
+                                                    leadership team can help minimise
+                                                    future risks and ensure solutions to possible challenges are
+                                                    mapped out.</li>
+                                                <li style="list-style-type: disc;">Onshore team members need to be
+                                                    informed of the purpose and
+                                                    process and what role they’re going to play in the strategy.
+                                                </li>
+                                                <li style="list-style-type: disc;">When preparing to offshore, ensure
+                                                    that your organisation has
+                                                    the right systems and processes in place.</li>
+                                                <li style="list-style-type: disc;">The onshore team must clearly map out
+                                                    all processes prior to
+                                                    offshoring to avoid future problems.</li>
+                                                <li style="list-style-type: disc;">Quality control standards should be
+                                                    implemented within the
+                                                    onshore team first.</li>
+                                            </ol>
+
+
+
+                                            <p></p>
+
+
+
+                                            <h4 id="addressing-risks-and-challenges">Addressing Risks and Challenges
+                                            </h4>
+
+
+
+                                            <p>Just like any other business strategy, offshoring naturally comes
+                                                with some risks and challenges, especially now that the industry is
+                                                constantly evolving. Some of the key concerns and solutions are
+                                                outlined below.</p>
+
+
+
+                                            <ol style="padding-left:30px;">
+                                                <li style="list-style-type: disc;">People look for diversity in their
+                                                    work, so those given small,
+                                                    repetitive administrative tasks may eventually experience
+                                                    burn-out and eventually leave.</li>
+                                                <li style="list-style-type: disc;">Employees want to progress in their
+                                                    careers in a shorter period
+                                                    of time.</li>
+                                                <li style="list-style-type: disc;">Turnover is high in places where
+                                                    there’s a high level of
+                                                    competition.</li>
+                                                <li style="list-style-type: disc;">Countries with poor regulatory
+                                                    frameworks can discourage clients
+                                                    who want to offshore.</li>
+                                                <li style="list-style-type: disc;">Cultural differences (i.e. language
+                                                    barriers) can impact a
+                                                    firm’s offshoring strategy.</li>
+                                            </ol>
+
+
+
+                                            <p><strong>&nbsp;Here are some tried and tested ways to deal with these
+                                                    challenges:</strong></p>
+
+
+
+                                            <ol style="padding-left:30px;">
+                                                <li style="list-style-type: disc;">Build an inclusive culture within
+                                                    your company.</li>
+                                                <li style="list-style-type: disc;">Ensure high employee engagement.</li>
+                                                <li style="list-style-type: disc;">Make sure that employees can enjoy
+                                                    career growth.</li>
+                                                <li style="list-style-type: disc;">Allow your employees to do higher
+                                                    level work that will help them
+                                                    learn and develop new skills.</li>
+                                                <li style="list-style-type: disc;">Rotate people across tasks and
+                                                    processes.</li>
+                                                <li style="list-style-type: disc;">Promote mutual understanding between
+                                                    offshore and onshore teams
+                                                    through site visits.</li>
+                                                <li style="list-style-type: disc;">Offer cultural training programs to
+                                                    your entire team.</li>
+                                            </ol>
+
+
+
+                                            <p>Offshoring has tremendous benefits to firms. When done right, it can
+                                                improve productivity, enhance efficiency and increase profits. But
+                                                it is important to know that you do need to invest time and effort
+                                                to make it work for everyone.</p>
+
+
+
+                                            <p><em>Originally published on 31 January 2018 – updated on 20 May
+                                                    2022.</em></p>
+
+
+
+                                            <hr class="wp-block-separator"
+                                                style="border-style:solid; border-style: solid; border-width:2px">
+
+
+
+                                            <p><em><em>Agile Accounting</em>&nbsp;helps accounting firms from all over
+                                                    the
+                                                    world grow their capacity, margins and profits through global
+                                                    outsourcing.&nbsp;Get in
+                                                    touch&nbsp;to request a <a style="padding:0px; font-size: small;"
+                                                        href="book a statagy session.html"
+                                                        data-wpel-link="internal">Free Accounting Outsourcing
+                                                        Strategy</a> for your firm.</em></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-4" style="z-index: 1;">
+                                        <aside class="sticky-sidebar sticky-top is-affixed" id="sticky-sidebar">
+                                            <div class="inner-wrapper-sticky sticky-bottom"
+                                                style="position:relative;border-radius: 20px; background-color: red;">
+                                                <div class="in-sidebar">
+                                                    <div class="sidebar-item sidebar-adver">
+                                                        <div class="sidebar-infor" style="padding:40px;">
+                                                            <h1 style="color:white">Get A Free Accounting
+                                                                Outsourcing Strategy</h1>
+                                                            <p style="color:white">Get A Detailed Blueprint For Rapidly
+                                                                Scaling Your Capacity, Margins and Profits For Free
+                                                                - A $500 Value</p>
+                                                            <button class="buttonstyl"
+                                                                style="background-color:rgb(71, 7, 71);width:100%;"
+                                                                onclick="toggleForm()"><span>Get Free Strategy</span>
+                                                            </button>
+
+
+                                                        </div>
+                                                        <img src="https://toaglobal.com/wp-content/themes/generatepress_child/images/blog-sidebar.png"
+                                                            alt="Get A Free Accounting Outsourcing Strategy"
+                                                            style="width:100%;">
+                                                    </div>
+                                                </div>
+                                                <object
+                                                    style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%;overflow: hidden; pointer-events: none; z-index: -1;"
+                                                    type="text/html"></object>
+                                            </div>
+                                        </aside>
+                                        <object
+                                            style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%;overflow: hidden; pointer-events: none; z-index: -1;"
+                                            type="text/html"></object>
+                                    </div>
+                                </div>
+
+                            </div><!-- .entry-content -->
+
+
+                        </div><!-- .inside-article -->
+                    </article><!-- #post-## -->
+                </main><!-- #main -->
+            </div><!-- #primary -->
+
+        </div><!-- #content -->
+    </div>
+    <div class="header4">
+        <div class=" container pattern-math-symbol">
+            <h1 style="padding:5px;color: #9aeae1;">
+                Agile Accounting outsourcing services provide
+                your firm with highly skilled people for roles
+                ranging from accounting to IT, administration
+                and marketing
+            </h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
+                    <div id="card" style="height:95%;width:100%;">
+                        <a style="padding: 0; width: 100%;" href="accountant.html">
+                            <img class="col "
+                                style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;width:100%;"
+                                src="https://i.postimg.cc/q7CVqkNK/accontant.png" width="100%;" max-height="370px"></a>
+                        <a href="accountant.html">
+                            <h4 style="font-size: 1.5rem;color: crimson;">
+                                Accountant
+                            </h4>
+                            <p style="font-size: 1rem;">
+                                Accountants to handle accounting functions including sales invoicing, cashflows,
+                                payables
+                                and
+                                receivables, and data entry.
+                            </p>
+                            <p style="font-weight: bold;color: darkblue;font-size: 1rem;">
+                                Learn More<i class="bi bi-chevron-right"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
+                    <div id="card" style="height:95%;">
+                        <a style=" padding: 0; width: 100%;" href="cpa.html">
+
+                            <img class="col"
+                                style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
+                                src="https://i.postimg.cc/bYRJym9t/cpaimage.png" max-height="370px"></a>
+
+                        <a href="cpa.html">
+                            <h4 style="font-size: 1.5rem;color: crimson;">
+                                CPA
+                            </h4>
+                            <p style="font-size: 1rem;">
+                                Chartered professional accountants who are ready to support your team with
+                                client-specific deliverables
+                                and tasks.
+                            </p>
+                            <p style="font-weight: bold;color: darkblue;font-size: 1rem;">
+                                Learn More<i class="bi bi-chevron-right"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
+                    <div id="card" style="height:95%;">
+                        <a style="padding: 0; width: 100%;" href="Bookkeeper.html">
+
+                            <img class="col"
+                                style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;" src="
+                https://i.postimg.cc/2SgB9m2g/bookkeepersimg.png" max-height="370px"> </a>
+
+                        <a href="Bookkeeper.html">
+                            <h4 style="font-size: 1.5rem;color: crimson;">
+                                Bookkeeper
+                            </h4>
+                            <p style="font-size: 1rem;">
+                                Our bookkeeping experts can help firms and organizations make better operating,
+                                investing
+                                and budgeting
+                                decisions.
+                            </p>
+                            <p style="font-weight: bold;color: darkblue;font-size:1rem;">
+                                Learn More<i class="bi bi-chevron-right"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
+                    <div id="card" style="height:95%;">
+                        <a style="padding: 0; width: 100%;" href="administrator.html">
+
+                            <img class="col"
+                                style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
+                                src="https://i.postimg.cc/Hs7h0hvJ/admins.png" max-height="370px"></a>
+
+                        <a href="administrator.html">
+                            <h4 style="font-size: 1.5rem;color: crimson;">
+                                Administrator
+                            </h4>
+                            <p style="font-size: 1rem;">
+                                Outsource administrative tasks like data entry, CRM maintenance, reporting and ad hoc
+                                activities.
+                            </p>
+                            <p style="font-weight: bold;color: darkblue; font-size: 1rem;">
+                                Learn More<i class="bi bi-chevron-right"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
+                    <div id="card" style="height:95%;">
+                        <a style="padding: 0; width: 100%;" href="virtualassisant.html">
+
+                            <img class="col"
+                                style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
+                                src="https://i.postimg.cc/yNwMzCGz/virtual.png" max-height="370px"></a>
+
+                        <a href="virtualassisant.html">
+                            <h4 style="font-size: 1.5rem;color: crimson;">
+                                Virtual Assistant
+                            </h4>
+                            <p style="font-size: 1rem;">
+                                Our VA can help with day-to-day tasks like managing your calendar, office
+                                administra-tion,travel
+                                arrangements and scheduling meetings.
+                            </p>
+                            <p style="font-weight: bold;color: darkblue;font-size: 1rem;">
+                                Learn More<i class="bi bi-chevron-right"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="All solutions.html"><button id="lastcards" class="buttonstyl"><span>Explore all
+                        Solutions</span></button></a>
+        </div>
+    </div>
+    <div class="header7" style="background-color:crimson">
+        <div class="container contain">
+            <div class="boxes">
+                <div class="box justify-content-end" style="justify-content:end;padding-bottom:0px;">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/10/CTA-lady_with_glasses.png.webp"
+                        height="500" style="margin-bottom:0px;">
+                </div>
+                <div class="box" id="h5matter" style="padding:50px;align-self: center;">
+                    <h1 style="color:rgb(251, 248, 255);font-size:1.7rem;">
+                        Find out more
+                    </h1>
+                    <p style="color:rgb(251, 248, 255);">
+                        Book a call at a time that suits you
+                    </p>
+
+                    <button class="buttonstyl md-button strategy-session-trigger"
+                        style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;"
+                        onclick="toggleForm()"><span>book a chat</span></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-------------------------------footer up root of the page----------------------->
+    <div style="background-color: #66058c;">
+        <div class="container">
+            <div class="row">
+                <a style="color:white;font-size: 1rem;" href="index.html">Home </a>
+                <a style="color:white;font-size: 1rem;">>></a>
+                <a style=" color:white;font-size: 1rem;" href="bolgs.html"> Blogs</a>
+                <a style="color:white;font-size: 1rem;"> >> Outsourced Accounting Benefits, Risks and Challenges</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------------Footer------------------------------------->
+    <!----------footer-------->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-2" style="padding:25px;">
+
+                    <a href="index.html"><img src="logoagilel.png" style="width:60%; padding: 0px;"></a>
+                    <p style="font-size: 0.8rem;"><i class="fa fa-location-arrow"></i> Location comes here</p>
+                    <p style="font-size: 0.8rem;"><i class="fa fa-phone-alt "></i> <a href="tel:+1 (408)214-9890"
+                            target="" class="in-grid-item cardClick" data-wpel-link="internal"
+                            style="font-size:0.7rem;color: white;padding:0%;">
+                            +1-(408) 214-9890</a>
+                    </p>
+
+                    <p style="font-size: 0.8rem;"><i class="fa fa fa-envelope"></i> <a href="mailto:info@agileac.com"
+                            style="font-size:0.7rem;color: white;padding:0%;">
+                            info@agileac.com </a> </p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6"></div>
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Company</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a style="padding:0px;width: auto;" href="The Agile ac difference.html">The
+                                AGILE
+                                Ac difference</a>
+                        </li>
+                        <li><a href="meetourtalent.html">Meet our talent</a></li>
+                        <li><a href="who_we_are.html">Who we are</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Solutions</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="accountant.html">Accountant</a></li>
+                        <li><a href="cpa.html">CPA</a></li>
+                        <li><a href="Bookkeeper.html">Bookkeeper</a></li>
+                        <li><a href="administrator.html">Administrator</a></li>
+                        <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                        <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
+                        <li><a href="All solutions.html">All solutions</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Resources</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="book a statagy session.html">Book a strategy session</a></li>
+                        <li><a href="checklist.html">Outsourcing checklist</a></li>
+                        <li><a href="remote accounting team.html">Remote team report</a></li>
+                        <li><a href="">Virtual assistant guide</a></li>
+                        <li><a href="retainandgrow.html">Retain and grow talent guide</a></li>
+                        <li><a href="scaleandgrow.html">Scale and grow your accounting firm</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">
+                        Agile Accounting Links
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> Ab² Institute of accounting</a></li>
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> AGILE Ac careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" style="text-align:left;">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <p class=" text-center flo" style="font-size: 0.7rem;">All Rights Reserved Agile Accounting @2022
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12" style="float:flex-end;">
+                    <a href=" privacypolicy.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Privacy
+                        policy</a>
+                    <a href="Accessibility Statement.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Accessibility
+                        statement</a>
+                    <a href="contact us.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Contact
+                        us</a>
+                    <a href="Terms of Use.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;color: white;">Terms of
+                        use</a>
+                </div>
+            </div>
+            <ul class="social_footer_ul">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/agile-accounting/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- .site-footer -->
+    <script src="app.js">
+    </script>
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
+    <script>
+        function classtoggle() {
+            const navs = document.querySelectorAll('.navbar-links')
+
+            navs.forEach(nav => nav.classList.remove('navbar-links-active'));
+        }
+
+        document.querySelector('.close-button')
+            .addEventListener('click', classtoggle);
+    </script>
+    <script src="form.js"></script>
+    <script>
+        // drowdown open and close on click
+
+        function myfunction1() {
+            document.getElementById("myDropdown").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction2() {
+            document.getElementById("myDropdown1").classList.toggle("show1");
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction3() {
+            document.getElementById("myDropdown2").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+        }
+    </script>
+</body>
+
+</html>
