@@ -88,9 +88,10 @@
                     <div class="navbar-links">
                         <ul>
                             <a href="#" class="close-button">&times;</a>
-                            <li><a style="font-size:0.7rem;text-align: left;" class="colr" href="#">company <i
-                                        class="arrow down"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem;text-align: left;" onclick="myfunction1()" class=" colr"
+                                    href="#">company
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile
                                             Accounting
                                             difference</a></li>
@@ -102,9 +103,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" class="colr"
-                                    href="#">Solutions <i class="arrow down" style="font-size: smaller;"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" onclick="myfunction2()"
+                                    class="colr" href="#">Solutions <i class="arrow down"
+                                        style="font-size: smaller;"></i></a>
+                                <ul id="myDropdown1" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
                                     <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
                                     <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
@@ -116,9 +118,10 @@
                                     <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.7rem;text-align:left;" href="#" class="colr">Resources <i
-                                        class="arrow down"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem;text-align:left;" onclick="myfunction3()" href="#"
+                                    class="colr">Resources
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown2" class="text" style="z-index:1;">
 
 
                                     <li
@@ -134,7 +137,7 @@
 
 
                                     <li style="border-radius:0px 0px 0 0;text-align: left;  font-weight:
-                      bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
+                                      bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
                                         Free Tools
                                     </li>
                                     <li><a style="text-align: left;" href="book a statagy session.html">Book a
@@ -157,7 +160,7 @@
                                     <span class="screen-reader-text"></span>
                                     <input type="search" class="search-field" placeholder="Search" value="" name="s"
                                         title="Search for:" style="border-radius:0.7rem;padding:2px; width:
-                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
+                                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
                                 </label>
                                 <button type="submit" class="search-submit topnov" value="Search"
                                     style="border:none;outline:none;background:none"><span class="sr-only">Search</span>
@@ -171,8 +174,8 @@
 
             </div>
 
-            <div class="boxes ">
-                <div class="box" id=" header_heading" style="align-self: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12" id=" header_heading" style="align-self: center;">
 
                     <h1 style="color: #4a0466;padding-bottom: 20px;">Free Checklist For Accountants:</h1>
                     <p style="font-size: 1rem;padding-bottom: 20px; color: #4a0466;" id="header_para">
@@ -183,7 +186,7 @@
                                 Access</span></button>
                     </div>
                 </div>
-                <div class="box">
+                <div class="col-lg-6 col-md-12 col-sm-12 " style="text-align: center;align-self: flex-end;">
                     <img id="header_image1" src="https://i.postimg.cc/tJDPH27h/headerimage1.png" width="100%">
                 </div>
             </div>
@@ -196,9 +199,8 @@
 
     <div class="header5" style="background-color: white;">
         <div class="container contain">
-            <div class="boxes">
-
-                <div class="box h5matter">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 h5matter" style="text-align:left;padding:10px;">
                     <h1 style="color:#4a0466;padding-bottom:7px; text-align:center;">
                         Do What You Do Best In-House, And Delegate The Rest
                     </h1>
@@ -216,7 +218,7 @@
                     </p>
                 </div>
 
-                <div class="box">
+                <div class="col-lg-6 col-md-12 col-sm-12" style="align-self: flex-end;">
                     <!-- <div class="boximage"> -->
                     <img src="https://toaglobal.com/wp-content/uploads/2021/10/WORK-VALUE-OUTSOURCING.png.webp">
                     <!-- </div> -->
@@ -230,9 +232,9 @@
 
     <div>
         <div class="container contain header6" style="background-color:rgb(194, 241, 226)">
-            <div class="boxes">
+            <div class="row">
 
-                <div class="box" id="h6matter">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-0 order-last" id="h6matter">
                     <h1 style="padding-bottom:25px ;color:darkblue" ;>
                         <bold>Inside, You Will Discover</bold>
                     </h1>
@@ -263,7 +265,8 @@
                                 Access</span></button></div>
                 </div>
 
-                <div class="box">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-0 order-last"
+                    style="text-align:center;align-self: center;">
                     <img src="https://toaglobal.com/wp-content/uploads/2021/10/White_lightbulb.png.webp" id="h6image">
                 </div>
 
@@ -276,8 +279,9 @@
 
     <div class="header7" style="background-color:rgb(194, 241, 226);">
         <div class="container contain">
-            <div class="boxes">
-                <div class="box" id="h5matter" style="padding:50px;align-self: center;">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 h5matter"
+                    style="text-align:left;padding:10px;align-self:center">
                     <h1 style="color:darkblue;font-size:1.7rem;">
                         Free Checklist For Accountants:
                     </h1>
@@ -289,7 +293,7 @@
                                 Access</span>></button></div>
                 </div>
 
-                <div class="box justify-content-end" style="justify-content:end;padding-bottom:0px;">
+                <div class="col-lg-6 col-md-12 col-sm-12" style="align-self: flex-end;">
                     <img src="https://toaglobal.com/wp-content/uploads/2021/07/Hero_VA-560x480.png.webp" height="500"
                         style="margin-bottom:0px;">
                 </div>
@@ -441,6 +445,42 @@
             .addEventListener('click', classtoggle);
     </script>
     <script src="form.js"></script>
+
+    <script>
+        // drowdown open and close on click
+
+        function myfunction1() {
+            document.getElementById("myDropdown").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction2() {
+            document.getElementById("myDropdown1").classList.toggle("show1");
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction3() {
+            document.getElementById("myDropdown2").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+        }
+    </script>
 </body>
 
 </html>
