@@ -1,1090 +1,767 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Helvetica&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
-@import url("//db.onlinewebfonts.com/c/d9a58a393d946d86051fbd9a0b594d2f?family=Audrey");
-@import url("https://fonts.googleapis.com/css?family=Libre Baskerville");
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
-
-body {
-  margin: 0;
-  width: 100%;
-}
-
-
-.main_header {
-  background-color: #b4e9e1;
-  /* text-align: center; */
-  padding: 10px;
-  padding-bottom: 0%;
-  margin-bottom: 0%;
-}
-
-.headup {
-  height: 30px;
-  /* align-content: center; */
-  background-color: rgb(53, 53, 82);
-}
-
-#header_heading {
-  padding: 30px;
-  color: rgb(25, 6, 95);
-  text-align: center;
-}
-
-#header_image1 {
-  position: relative;
-  margin-left: 1%;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  max-width: 470px;
-  align-self: baseline;
-
-}
-
-.arrow {
-  border: solid black;
-  border-width: 0 1px 1px 0;
-  display: inline-block;
-  padding: 2px;
-  margin-left: 2px;
-  text-align: center;
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-.right {
-  transform: rotate(315deg);
-  -webkit-transform: rotate(315deg);
-}
-
-.left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-
-.outer-flex {
-  display: flex;
-  flex-direction: row;
-  padding: 0%;
-  /* justify-content: space-between; */
-  justify-content: flex-start;
-  width: 100%;
-
-}
-
-#flex1 {
-  display: flex;
-  justify-content: center;
-  padding-left: 3vw;
-
-}
-
-.flex1-img {
-  display: flex;
-  width: 100%;
-  padding-left: 0%;
-}
-
-
-/* TOGGLE CSS */
-.icon {
-  width: 20px;
-  color: black;
-  border: 2px solid black;
-  position: fixed;
-}
-
-.hide {
-  background: yellow;
-  width: 20%;
-  height: 100vh;
-  /* /z-index: 0; / Stay on top */
-  top: 0px;
-  /* Stay at the top */
-  right: -20%;
-  position: fixed;
-  transition: 0.5s;
-}
-
-
-
-#sidebar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding-top: 100px;
-}
-
-#theme {
-  width: 25px;
-  background-color: white;
-  border: 2px solid black;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  z-index: 2;
-}
-
-
-
-/* Search box */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #2196F3;
-  color: white;
-}
-
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  border-style: solid;
-  border-radius: 20px;
-  font-size: 17px;
-}
-
-@media screen and (max-width: 600px) {
-
-  .topnav a,
-  .topnav input[type=text] {
-
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-
-/* header for paracuit image container */
-.header2 {
-  background-color: #f7f5f1;
-  text-align: center;
-  /* background-image: url("https://toaglobal.com/wp-content/uploads/2021/08/Bucket-two-image-560x560-1.png"); */
-  /* background-image: linear-gradient(45deg, white, rgb(226, 149, 226)50%); */
-  background-position: center;
-  /* background-size: 280px 270px; */
-  background-repeat: no-repeat;
-  padding: 10vw;
-  padding-top: 55px;
-  padding-bottom: 45px;
-}
-
-/* button style */
-/* .buttonstyl {
-  text-align: center;
-  font-size: 1rem;
-  color: white;
-  padding: 20px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  position: relative;
-  font-weight: bold;
-  border-radius: 19px;
-  border-style: none;
-  background-color: red;
-  box-shadow: 0px 0px 5px 4px rgba(240, 60, 60, 0.7);
-} */
-
-.buttonstyl {
-  border-radius: 4px;
-  background-color: #c491a5;
-  border: none;
-  color: #FFFFFF;
-  border-style: solid;
-  border-width: 1px;
-  text-align: center;
-  width: auto;
-  font-size: 1rem;
-  padding: 10px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  box-shadow: 5px 5px gray;
-
-}
-
-.buttonstyl:hover {
-  background-color: rgb(203, 14, 96);
-  box-shadow: 0 0 20px 0px red;
-  border-style: none;
-}
-
-.but:hover {
-  background-color: rgb(203, 14, 96);
-  box-shadow: 0 0 20px 0px rgb(43, 26, 93);
-  border-style: none;
-}
-
-.buttonstyl span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  position: center;
-  transition: 0.6s;
-}
-
-.buttonstyl span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.buttonstyl:hover span {
-  padding-right: 25px;
-
-}
-
-.buttonstyl:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.header3 {
-  background-color: white;
-  text-align: center;
-  padding: 50px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
-
-.textcol {
-  color: red;
-}
-
-.header4 {
-  text-align: center;
-
-  padding: 50px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  background-color: #4b0865;
-  position: relative;
-}
-
-.header4::before {
-  content: "";
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  background: url(https://toaglobal.com/wp-content/themes/generatepress_child/images/math-symbols.png);
-  background-position: top center;
-  position: absolute;
-  background-repeat: repeat;
-  opacity: 0.1;
-}
-
-/* Card header4 */
-#card {
-  text-decoration: none;
-  text-align: start;
-  border-radius: 15px;
-  margin-bottom: 50px;
-  background-color: white;
-
-}
-
-/* #card:hover {
-  -ms-transform: scale(1.02); */
-/* IE 9 */
-/* -webkit-transform: scale(1.02); */
-/* Safari 3-8 */
-/* transform: scale(1.02); */
-
-/* } */
-
-.text a:hover {
-  color: #fff;
-  text-decoration: none;
-  color: orange;
-  font-weight: 400;
-  /* font-style: normal; */
-}
-
-.text1 a:hover {
-  color: #fff;
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
-  /* font-style: normal; */
-}
-
-/* last cards */
-#lastcards {
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-
-/* header 5 */
-.header5 {
-  background-color: rgb(223, 235, 237);
-  text-align: center;
-  padding: 50px;
-}
-
-#h5matter {
-  text-align: left;
-  padding-right: 250px;
-  justify-content: start;
-  padding-left: 20px;
-}
-
-
-
-/* header6 */
-.header6 {
-  background-color: #f4d2b9;
-  text-align: center;
-  margin: 100px 200px 100px 200px;
-  padding: 50px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  width: 40%;
-}
-
-#h6image {
-  justify-content: center;
-  width: 100%;
-  max-width: 370px;
-}
-
-#h6matter {
-  text-align: start;
-  justify-content: center;
-  padding-left: 20px;
-
-}
-
-/* header7 */
-.header7 {
-  text-align: center;
-}
-
-/* Featuredstories */
-.featuredstories {
-  background-color: #f4d2b9;
-}
-
-/* contact us */
-.in-image-icon:hover {
-  border-style: solid;
-  color: rgb(84, 71, 71);
-}
-
-/* footer */
-
-.col_white_amrc {
-  color: #fff;
-}
-
-footer {
-  width: 100%;
-  background-color: #4a0466;
-  letter-spacing: 0.08ch;
-  min-height: 250px;
-  padding: 10px 0px 25px 0px;
-}
-
-.pt2 {
-  padding-top: 40px;
-  margin-bottom: 20px;
-}
-
-footer p {
-  /* font-size: 13px; */
-  color: white;
-  padding-bottom: 0px;
-  margin-bottom: 8px;
-}
-
-.mb10 {
-  padding-bottom: 15px;
-}
-
-.footer_ul_amrc {
-  margin: 0px;
-  list-style-type: none;
-  /* font-size: 14px; */
-  padding: 0px 0px 10px 0px;
-  /* font-size: larger; */
-}
-
-.footer_ul_amrc li {
-  padding: 0px 0px 0px 0px;
-  display: block;
-  width: fit-content;
-  padding-bottom: 10px;
-}
-
-.footer_ul_amrc li a {
-  color: white;
-  font-size: 0.8rem;
-  display: block;
-  padding: 0.2px;
-  /* font-size: 10px; */
-}
-
-.footer_ul_amrc li a:hover {
-  color: #fff;
-  text-decoration: none;
-  color: red;
-}
-
-
-
-/* .fleft {
-  float: left;
-
-} */
-
-.padding-right {
-  padding-right: 10px;
-}
-
-
-.bottom_border {
-  border-bottom: 1px solid #323f45;
-  padding-bottom: 20px;
-}
-
-.foote_bottom_ul_amrc {
-  list-style-type: none;
-  padding: 0px;
-  display: table;
-  /* display: inline block; */
-  margin-top: 10px;
-  margin-right: auto;
-  margin-bottom: 10px;
-  margin-left: auto;
-}
-
-.col-lg-2-0 {
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  flex: 0 0 20%;
-  flex: 0 0 20%;
-  max-width: 20%;
-}
-
-.flo {
-  float: right;
-  float: left;
-}
-
-.foote_bottom_ul_amrc li {
-  display: block;
-}
-
-.foote_bottom_ul_amrc li a {
-  color: rgb(255, 248, 248);
-  margin: 0 12px;
-  padding: 2px;
-}
-
-.social_footer_ul {
-  display: table;
-  margin: 15px auto 0 auto;
-  list-style-type: none;
-}
-
-.social_footer_ul li {
-  padding-left: 20px;
-  padding-top: 10px;
-  /* float: left; */
-
-}
-
-.social_footer_ul li a {
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 254, 254);
-  padding: 10px;
-  height: 3rem;
-  border-radius: 50%;
-}
-
-.social_footer_ul li i {
-  width: 1rem;
-  /* height: 0.1rem; */
-  text-align: center;
-}
-
-/* header */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-/* HOVER EFFECT */
-
-
-div a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-
-  padding: 15px;
-  display: inline-block;
-}
-
-ul {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  display: inline-block;
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-ul li ul {
-  position: absolute;
-  width: 189px;
-  display: none;
-}
-
-ul li ul li {
-  background: white;
-  display: block;
-}
-
-ul li ul li a {
-  display: block !important;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-
-
-.BG {
-
-  background-position: center;
-  width: 100%;
-
-
-}
-
-nav {
-  width: 100%;
-  justify-content: end;
-
-}
-
-label.logo {
-  font-family: 'Poppins';
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: 500;
-}
-
-label.logo:hover {
-  color: #5eb9ff;
-}
-
-nav ul {
-  text-align: center;
-  float: right;
-  margin-right: 10px;
-  border-radius: 10px;
-  width: 10px;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 5px;
-
-}
-
-
-
-nav ul {
-  width: 100%;
-  text-align: center;
-}
-
-nav ul li a {
-
-  text-align: left;
-  font-family: 'Poppins';
-  color: rgb(8, 5, 5);
-
-}
-
-nav ul li ul li a {
-  padding: 2px;
-  text-align: left;
-  z-index: 5;
-  color: white;
-}
-
-nav ul li ul li {
-  text-align: left;
-  padding: 0px;
-  width: 90%;
-  background: none;
-}
-
-nav ul li ul {
-  background-color: #333d79ff;
-  text-align: left;
-  padding: 1rem;
-  padding-left: 1rem;
-  /* border-style: solid; */
-  /* border-color: #ddd; */
-  box-shadow: 1px 1px 7px 5px rgb(231, 206, 212);
-  transform: rotate3d(0, 1, 0, 35deg);
-
-}
-
-.close-button {
-  opacity: -2;
-  position: fixed;
-  right: 0;
-  align-self: center;
-  color: red;
-}
-
-.close-button:hover {
-  text-decoration: none;
-  color: red;
-  font: bold;
-  transform: scale3d(1.5, 1.5, 1.5);
-}
-
-nav ul li ul::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #333d79ff transparent;
-  position: absolute;
-  top: -10px;
-  left: 30%;
-}
-
-a.active,
-a:hover {
-  color: #5eb9ff;
-  transition: .5s;
-}
-
-.toggle-buttons {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: none;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.navbar-links {
-  width: 80%;
-
-}
-
-@media (max-width:768px) {
-  .toggle-buttons {
-    display: flex;
-    align-self: flex-end;
-    cursor: pointer;
-    position: absolute;
-  }
-
-  .show1 {
-    display: contents;
-  }
-
-  nav ul {
-    padding: 10px;
-    background: rgb(5, 5, 20);
-    position: fixed;
-    top: 0px;
-    bottom: -15px;
-    right: -10px;
-    width: 100%;
-    opacity: 2;
-    z-index: 3;
-    height: auto;
-    overflow-y: scroll;
-    border-radius: 0;
-
-  }
-
-  .colr {
-    color: white;
-    text-align: left;
-  }
-
-  .colr:hover {
-    text-decoration: none;
-    color: red;
-    text-align: left;
-  }
-
-  nav ul li ul li a {
-    width: fit-content;
-    display: flex;
-  }
-
-  /* nav ul li ul li a:hover {
-    background-color: rgb(55, 52, 52);
-    border-style: solid;
-    border-color: white;
-    transform: scale(1.091);
-
-  } */
-
-  .close-button {
-    font-size: larger;
-    font-weight: 900;
-    position: absolute;
-    top: 5px;
-    right: 0px;
-    opacity: 2;
-    display: flex;
-    align-self: flex-end;
-    cursor: pointer;
-    position: absolute;
-  }
-
-  nav ul li {
-    text-align: justify;
-    width: fit-content;
-    font-size: small;
-    color: white;
-  }
-
-  ul li:hover ul {
-    display: contents;
-  }
-
-  nav ul li ul li {
-    text-align: center;
-    padding: 0px;
-    width: 100%;
-    background: none;
-    display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 80%;
-
-  }
-
-  .navbar {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .navbar-links ul {
-    width: 50%;
-    flex-direction: row;
-  }
-
-  .navbar-links li {
-    text-align: center;
-    display: block;
-    align-items: flex-end;
-
-  }
-
-  .navbar-links li a {
-    padding: 0.5rem 1rem;
-    flex-direction: row;
-  }
-
-  .navbar-links-active {
-    display: block;
-    flex-direction: row;
-    align-items: flex-end;
-    /* position: absolute; */
-    /* width: auto; */
-  }
-
-  .navbar ul li ul li a {
-    font-size: 10px;
-    padding: 2px;
-    z-index: 1;
-    width: auto;
-    flex-direction: row;
-  }
-
-  .navbar-links {
-    width: 80%;
-
-  }
-}
-
-
-
-
-
-nav ul li ul li a {
-  font-size: 10px;
-  padding: 2px;
-  text-align: center;
-  z-index: index 5;
-}
-
-/* header 5new */
-.contain {
-  width: 100%;
-
-}
-
-.boxes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
-}
-
-.box {
-  width: 45%;
-  margin-bottom: 10px;
-  text-align: left;
-
-}
-
-.box p {
-  font-size: large;
-}
-
-
-.box img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media only screen and (max-width: 952px) {
-  .box {
-    width: 49%;
-
-  }
-
-  .container {
-    width: 50%;
-  }
-
-  .boximage {
-    height: 100%;
-  }
-}
-
-@media only screen and (max-width: 952px) {
-
-  .box {
-    width: 80%;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  .boximage {
-    height: 100%;
-  }
-}
-
-@media only screen and (max-width: 952px) {
-  .box {
-    width: 80%;
-  }
-
-  .container {
-    width: 100%;
-  }
-
-  .boximage {
-    height: 100%;
-  }
-}
-
-
-/* book a chat button */
-
-
-.overlay-form {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(93, 48, 200, 0.5);
-  z-index: -10;
-  opacity: 0;
-  padding: 80px 100px;
-  overflow: scroll;
-  box-sizing: border-box;
-
-}
-
-.over1 {
-  padding: 5px;
-  width: 100%;
-}
-
-
-.overlay-form .close-btn {
-  position: absolute;
-  justify-content: center;
-  top: 1rem;
-  text-align: center;
-  right: 2rem;
-  width: 1.5rem;
-  padding-top: 0px;
-  font-size: 1.3rem;
-  color: white;
-  font-weight: 600;
-  background-color: red;
-  cursor: pointer;
-}
-
-.overlay-form h1 {
-  font-size: 1rem;
-  color: rgb(53, 53, 82);
-}
-
-.overlay-form p {
-  font-size: 0.7rem;
-  color: rgb(53, 53, 82);
-  margin: 25px 0px 30px;
-}
-
-.overlay-form label {
-  display: block;
-  font-size: 0.7rem;
-  color: rgb(53, 53, 82);
-  margin-bottom: 5px;
-  padding-top: 10px;
-}
-
-.overlay-form input {
-  align-items: center;
-  height: 1.3rem;
-  background-color: #ddd;
-  width: 100%;
-  padding: 6px;
-  font-size: 0.7rem;
-  color: rgb(12, 10, 10);
-  border: 0.5px solid rgb(17, 15, 15);
-  outline: none;
-}
-
-
-
-.overlay-form button {
-  margin-top: 10px;
-  /* width: 100px; */
-  height: 1.7rem;
-  font-size: 1rem;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  color: white;
-  background: red;
-  padding: 2px;
-}
-
-body.activeForm .overlay-form {
-  z-index: 2;
-  opacity: 1;
-}
-
-
-body h1 {
-  font-size: 1.7rem;
-  line-height: 1.535;
-  /* font-weight: 500; */
-  font-family: Georgia, Times, 'Times New Roman', serif;
-  font-weight: 400;
-  letter-spacing: 0.06ch;
-}
-
-.qualification div {
-  box-shadow: 5px 5px rgb(116, 114, 114);
-}
-
-.qualification h1 {
-  font-size: 1.5rem;
-}
-
-.qualification p {
-  font-size: 1rem;
-}
-
-
-body p {
-
-  font-family: 'Roboto', 'sans-serif';
-
-  line-height: 1.735;
-  font-weight: 300;
-  /* font-family: slick; */
-  font-size: 1.1rem;
-}
-
-.header5 p {
-  font-size: 1.5rem;
-}
-
-body .buttonstyl {
-  text-align: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 952px) {
-
-  .main_header h1 {
-    text-align: center;
-  }
-
-  body .main_header p {
-    text-align: center;
-  }
-
-  .button1 {
-    text-align: center;
-  }
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The AGILE AC difference</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <script src="app.js">
+    </script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <style>
+        .page1header2 {
+            background-color: white;
+            text-align: center;
+            background-image: url("https://toaglobal.com/wp-content/uploads/2021/07/pink-lightbulb-2.png.webp");
+            background-position: center;
+            background-size: 120px 120px;
+            background-repeat: no-repeat;
+            padding: 10vw;
+            padding-top: 55px;
+            padding-bottom: 45px;
+        }
+
+        .buttonstyl:hover {
+            background-color: #008CBA;
+            color: white;
+        }
+    </style>
+</head>
+<!-- -------------------g form------------------- -->
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold;">Book a chat</h1>
+            <p>To find out how agile-accounting can assist your firm, please enter your details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <div style="background-color:#4a0466;height: 1rem;"></div>
+    <header class="main_header" style="background-color: rgb(241, 84, 84);">
+        <div class="container">
+            <div class="outer-flex">
+                <a style="padding:0px;" href="index.html"><img src="logoagilel.png"
+                        style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;"></a>
+                <nav class="navbar">
+                    <a href="#" class="toggle-buttons" style="color: #4a0466; z-index:1;">
+                        <i class="fas fa-bars"></i></a>
+                    <div class="navbar-links">
+                        <ul>
+                            <a href="#" class="close-button">&times;</a>
+                            <li><a style="font-size:0.7rem;text-align: left;" onclick="myfunction1()" class=" colr"
+                                    href="#">company
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown" class="text" style="z-index:1;">
+                                    <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile
+                                            Accounting
+                                            difference</a></li>
+                                    <li><a style="text-align: left;" href="meetourtalent.html">Meet our talent</a></li>
+                                    <li><a style="text-align: left;" href="who_we_are.html">Who we are</a></li>
+                                    <li><a style="text-align: left;" href="contact us.html">contact us</a></li>
+                                    <li><a style="text-align: left;" href=""><i class='fas fa-external-link-alt'></i>
+                                            AGILE Ac careers</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" onclick="myfunction2()"
+                                    class="colr" href="#">Solutions <i class="arrow down"
+                                        style="font-size: smaller;"></i></a>
+                                <ul id="myDropdown1" class="text" style="z-index:1;">
+                                    <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
+                                    <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
+                                    <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
+                                    <li><a style="text-align: left;" href="cpa.html">CPA</a></li>
+                                    <li><a style="text-align: left;" href="virtualassisant.html">Virtual assistant</a>
+                                    </li>
+                                    <li><a style="text-align: left;" href="local trained talent.html">Locally Trained
+                                            Talent</a></li>
+                                    <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
+                                </ul>
+                            </li>
+                            <li><a style="font-size:0.7rem;text-align:left;" onclick="myfunction3()" href="#"
+                                    class="colr">Resources
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown2" class="text" style="z-index:1;">
+
+
+                                    <li
+                                        style="text-align:left;font-weight: bold;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                        News and Events
+                                    </li>
+                                    <li><a style="text-align: left;" href="">Announcements</a></li>
+                                    <li
+                                        style="text-align: left;font-weight: bold;  ;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                        Education</li>
+                                    <li><a style="text-align: left;" href="bolgs.html">Blog</a></li>
+                                    <li><a style="text-align: left;" href="">Podcasts</a></li>
+
+
+                                    <li style="border-radius:0px 0px 0 0;text-align: left;  font-weight:
+                      bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
+                                        Free Tools
+                                    </li>
+                                    <li><a style="text-align: left;" href="book a statagy session.html">Book a
+                                            strategy session</a></li>
+                                    <li><a style="text-align: left;" href="checklist.html">Outsourcing checklist</a>
+                                    </li>
+                                    <li><a style="text-align: left;" href="remote accounting team.html">Remote team
+                                            report</a></li>
+                                    <li><a style="text-align: left;" href="">Virtual assistant report</a></li>
+                                    <li><a style="text-align: left;" href="retainandgrow.html">Retain and grow talent
+                                            guide</a></li>
+                                    <li><a style="text-align: left;" href="scaleandgrow.html">Scale and grow your
+                                            accounting
+                                            firm</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="searchbut">
+                                <label class="topnov" style="background:none;">
+                                    <span class="screen-reader-text"></span>
+                                    <input type="search" class="search-field" placeholder="Search" value="" name="s"
+                                        title="Search for:" style="border-radius:0.7rem;padding:2px; width:
+                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
+                                </label>
+                                <button type="submit" class="search-submit topnov" value="Search"
+                                    style="border:none;outline:none;background:none"><span class="sr-only">Search</span>
+                                    <img src="https://toaglobal.com/wp-content/themes/generatepress_child/images/search.svg"
+                                        aria-hidden="true" alt="Search icon" style="height: 15px;color:white;">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12" id=" header_heading" style="align-self:center;">
+
+                    <h1 style="color: white;">An outsourcing business, 100% for the accounting
+                        industry</h1>
+                    <p style="color: white;" id="header_para">
+                        We hire, upskill and manage resources, so you can focus on your clients and growth. As industry
+                        leaders in outsourcing, your offshore team enjoys outstanding benefits, including in-house
+                        education.
+                    </p>
+
+                    <div style="margin-bottom:2rem;" class="button1"><button class=" buttonstyl"
+                            style="background-color: #4a0466;" onclick="toggleForm()"><span>Book a chat</span></button>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12" style="text-align: center;align-self: flex-end;">
+                    <img id="header_image1"
+                        src="https://toaglobal.com/wp-content/uploads/2021/07/Hero-2-ladies.png.webp"
+                        style="max-width:470px;width:100%">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- next block  contains icons of all solutions-->
+    <div class="header3">
+        <div class="container">
+            <h1 class="textcol">Skilled talent across all accounting disciplines</h1>
+            <p style="font-size: 1rem; padding:5px;">We have over 2,000 team members working for more than 600
+                accounting firms, in
+                senior and junior accounting, bookkeeping, specialist and administrative roles. </p>
+            <p style="font-size: 1rem;padding: 5px;;">Since opening our doors in 2014, we have been obsessed with the
+                accounting
+                industry,
+                taking care to invest in industry insight and knowledge.
+            </p>
+            <p style="font-size: 1rem;">Access top talent and build your remote team without the stress of in-house
+                hiring and upskilling.
+            </p>
+            <p style="font-weight: bold;">
+                <bold>Roles include:</bold>
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-2 col-md-3 col-sm-12  text">
+                    <a href="accountant.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/calculator-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Accountant
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="cpa.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/math-operations-2.png.webp">
+                        <p style="font-size:1rem;">
+                            CPAs
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="Bookkeeper.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/receipt-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Bookkeepers
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="All solutions.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/notebook-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Paraplanners
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="administrator.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/user-circle-gear-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Administrators
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="virtualassisant.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/headset-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Virtual Assistants
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="All solutions.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/trend-up-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Data Analysts
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="All solutions.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/users-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Client Service Assistants
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="All solutions.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/wallet-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Financial Planning Assistants
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="All solutions.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/presentation-chart-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Marketing Coordinators
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="All solutions.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/house-line-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Mortgage Broking Assistants
+                        </p>
+
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-12 text">
+                    <a href="All solutions.html">
+                        <img src="https://toaglobal.com/wp-content/uploads/2021/07/suitcase-simple-2.png.webp">
+                        <p style="font-size:1rem;">
+                            Retirement Fund Accountants and Auditors
+                        </p>
+
+                    </a>
+                </div>
+
+            </div>
+            <p>All our experienced accountants and CPAs hold bachelors or masters degrees and receive training to
+                upskill their compliance, technical and soft skills through our very own Ab2 Institute of Accounting.
+            </p>
+            <div class="row justify-content-center" style="padding-bottom:20px;">
+                <div class="col-md-6 col-lg-6 col-sm-12">
+                    <a href="All solutions.html">
+                        <button class=" buttonstyl"><span>Explore our solutions</span></button>
+                    </a>
+                    <a href="meetourtalent.html">
+                        <button class="buttonstyl"
+                            style="color:red; background-color:white;border-color: red;border-style: solid;"><span>Meet
+                                Out Talent</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- next block contains  local care dedicated support-->
+    <div class="header5" style="background-color: rgb(228, 194, 194);">
+        <div class="container contain">
+            <div class="row">
+                <div class="col-lg-6 col-12 order-lg-0 order-last h5matter" style="text-align: left;padding:15px;">
+                    <h1 style="color:#4a0466;padding-bottom:7px;font-size:1.7rem;">
+                        Local care - dedicated support
+                    </h1>
+                    <p>
+                        Our leadership team and Account Managers are based in the markets we serve. Deal directly with
+                        people who understand local market conditions, with offices in San Diego, Dallas, Toronto, and
+                        the Gold Coast (Australia).
+                    </p>
+                    <p>
+                        Gain a dedicated team for your firm, as well as an Account Manager, Client Service Manager and a
+                        People Service Advisor.m.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/TM1.jpg.webp"
+                        style="text-align: center;width:90%;box-shadow: 10px 10px rgba(76, 0, 130, 0.356);">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- next block contains onboarding succcess -->
+    <div class="header5">
+        <div class="container contain">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/11/TM2.jpg.webp"
+                        style="text-align: center;width:90%;box-shadow: 10px 10px rgba(76, 0, 130, 0.356);">
+                </div>
+
+                <div class="col-lg-6 col-12 h5matter" style="text-align: left;padding:20px;">
+                    <h1 style="color:#4a0466;padding-bottom:7px;font-size:1.7rem;">
+                        Onboarding success
+                    </h1>
+                    <p>
+                        Enjoy a fully supported onboarding process, including a local, dedicated Recruitment Manager to
+                        manage the hiring process.</p>
+                    <p>
+                        Access a unique course designed specifically for firms in the accounting industry: Offshore Best
+                        Practice: Managing a Successful Offshore Team.
+                    </p>
+                    <p style="font-weight:bold;">
+                        Want to learn more?
+                    </p>
+
+                    <a href=""
+                        style="text-decoration:underline;text-decoration-color:coral;font-size: 1rem;font-weight: bold;padding:0;">Download
+                        our Onboarding Guide <i class="bi bi-chevron-right"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- next block bulb image-->
+    <div class="page1header2">
+        <div class="container">
+            <h1 class="textcol">A people-focused business, people+</h1>
+        </div>
+    </div>
+    <!-- next block -->
+    <div>
+        <div class="container" style="text-align:center;">
+            <p>
+                Your team are our people - so we provide excellent working conditions in three top-notch facilities
+                across the Philippines.
+            </p>
+            <p style="font-weight: bold;">You and your team will gain:</p>
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
+                    <div style="background-color:rgb(228, 194, 194);text-align: left;padding: 20px;height: 100%;">
+                        <h1 style="color:#4a0466;">+Support</h1>
+                        <p>Dedicated Human Resources (HR) and ICT support teams</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
+                    <div style="background-color:rgb(228, 194, 194);text-align: left;padding: 20px;height: 100%;">
+                        <h1 style="color:#4a0466;">+Programs</h1>
+                        <p>Each employee benefits from financial support, health and wellness programs and free vaccines
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
+                    <div style="background-color:rgb(228, 194, 194);text-align: left;padding: 20px;height: 100%;">
+                        <h1 style="color:#4a0466;">+Benefits</h1>
+                        <p>Our industry-leading facilities include an on-site medical clinic, sleep rooms, a café,
+                            breakout rooms, and a pantry
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
+                    <div style="background-color:rgb(228, 194, 194);text-align: left;padding: 20px;height: 100%;">
+                        <h1 style="color:#4a0466;">+Community</h1>
+                        <p>
+                            Community outreach programs, an annual holiday party, Sportsfest, plus regular employee team
+                            events and activities
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- next block -->
+    <div>
+        <div class="container contain header6" style="box-shadow:15px 15px rgb(168, 176, 197);width:70%">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12" style="align-self: center; text-align:center;">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/07/Ab2tagline-2.png.webp"
+                        style="width:100%;max-width:370px;" id="h6image">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12" id="h6matter">
+                    <h1 color="blue" style="color:#4a0466;font-style: Roboto;">
+                        <bold>+Exclusive access to specialized education for the accounting industry</bold>
+                    </h1>
+                    <p>Our own Ab² Institute of Accounting ensures that your team maintains its expertise and
+                        skills,
+                        remaining up to date on advice and technologies specific to the accounting industry.
+                    </p>
+                    <p>
+                        Courses include:
+
+                        <ol style="padding-left:30px;">
+                            <li style="list-style-type:disc;"> Professional development short courses</li>
+                            <li style="list-style-type:disc;"> Technical training for technologies including Xero and
+                                QuickBooks
+                            </li>
+                            <li style="list-style-type:disc;"> Country-specific qualifications, such as the Diploma of
+                                Accounting</li>
+
+                        </ol>
+                    </p>
+                    <p>
+                        Ab² Institute of Accounting is the only continuing professional development (CPD)-approved
+                        provider in the Philippines, and accredited in Australia and the U.S.A.
+                    </p>
+
+                    <a href="" style="text-decoration:underline;text-decoration-color:coral; font-size: 1rem;font-weight:
+                        bold;padding: 0px;"> <i class='fas fa-external-link-alt'></i>Learn
+                        More
+                        <i class="bi bi-chevron-right"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- next block -->
+    <div class="header7" style="background-color:#eb9a9a;padding:0%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-0 order-md-1 order-sm-1 order-last"
+                    style="padding-bottom:0px; text-align:last;align-self:flex-end;">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/10/CTA-lady_with_glasses.png.webp"
+                        style="width:100%;max-width:400px;">
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12" id="h5matter" style="padding:50px;">
+                    <h1 style="color:rgb(251, 248, 255);">
+                        Ready To Find Out More?
+                    </h1>
+                    <p style="color:rgb(251, 248, 255);">
+                        Why reinvent the wheel, when you can get a detailed Outsourcing Strategy & Plan tailored to your
+                        exact needs
+                        for free?</p>
+                    <p style="color:rgb(251, 248, 255);">
+                        Click the button below to reserve a time to chat. We’ll create a detailed blueprint for rapidly
+                        scaling your
+                        capacity, margins and profits.
+                    </p>
+
+                    <button class="buttonstyl md-button strategy-session-trigger but"
+                        style="Background-color:rgb(80, 23, 80);" onclick="toggleForm()"><span>GET YOUR FREE OUTSOURCING
+                            STRATEGY</span></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- next block -->
+    <div>
+        <div class="container contain header6" style="box-shadow:15px 15px rgb(168, 176, 197);width:70%">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 col-sm-12" id="h6matter">
+                    <h1 color="blue" style="padding-bottom:25px ;color:#4a0466;padding-bottom:10px;">
+                        +Seamless technologies and security
+                    </h1>
+                    <p>Our world-class workspaces, bank-level security, and leading technologies ensure the smooth
+                        and
+                        efficient operation of your remote team, with high-end infrastructure including power and
+                        internet redundancy for safety and business continuit
+                    </p>
+                    <p>
+                        Our facilities are custom-built for firms in the accounting industry, with desks and the
+                        space
+                        between workspaces larger
+                        than the industry standard, offering privacy and sound minimization.
+                    </p>
+                    <p>
+                        Our office layouts are unlike those of other outsourcing providers. While ours are designed
+                        to
+                        promote productivity, we have also dedicated more than 30% of floor space to break areas,
+                        where
+                        team members can recharge and refresh.
+                    </p>
+
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 order-lg-1 order-first" style="align-self:center;">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/07/smartsafe.png.webp" id="h6image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- connecting pages nav bar -->
+    <div style="background-color: #66058c;">
+        <div class="container">
+            <div class="row">
+                <a style="color:white;font-size: 1rem;" href="index.html">Home </a>
+                <a style="color:white;font-size: 1rem;"> >> The AGILE AC
+                    difference
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end of connecting pages nav bar -->
+    <!----------footer-------->
+    <footer class="footer">
+        <div class="container bottom_border">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-lg-2" style="padding:25px;">
+
+                    <a href="index.html"><img src="logoagilel.png" style="width:60%; padding: 0px;"></a>
+                    <p style="font-size: 0.8rem;"><i class="fa fa-location-arrow"></i> Location comes here</p>
+                    <p style="font-size: 0.8rem;"><i class="fa fa-phone-alt "></i> <a href="tel:+1 (408)214-9890"
+                            target="" class="in-grid-item cardClick" data-wpel-link="internal"
+                            style="font-size:0.7rem;color: white;padding:0%;">
+                            +1-(408) 214-9890</a>
+                    </p>
+
+                    <p style="font-size: 0.8rem;"><i class="fa fa fa-envelope"></i> <a href="mailto:info@agileac.com"
+                            style="font-size:0.7rem;color: white;padding:0%;">
+                            info@agileac.com </a> </p>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6"></div>
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Company</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a style="padding:0px;width: auto;" href="The Agile ac difference.html">The
+                                AGILE
+                                Ac difference</a>
+                        </li>
+                        <li><a href="meetourtalent.html">Meet our talent</a></li>
+                        <li><a href="who_we_are.html">Who we are</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Solutions</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="accountant.html">Accountant</a></li>
+                        <li><a href="cpa.html">CPA</a></li>
+                        <li><a href="Bookkeeper.html">Bookkeeper</a></li>
+                        <li><a href="administrator.html">Administrator</a></li>
+                        <li><a href="virtualassisant.html">Virtual assistant</a></li>
+                        <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
+                        <li><a href="All solutions.html">All solutions</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Resources</h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href="book a statagy session.html">Book a strategy session</a></li>
+                        <li><a href="checklist.html">Outsourcing checklist</a></li>
+                        <li><a href="remote accounting team.html">Remote team report</a></li>
+                        <li><a href="">Virtual assistant guide</a></li>
+                        <li><a href="retainandgrow.html">Retain and grow talent guide</a></li>
+                        <li><a href="scaleandgrow.html">Scale and grow your accounting firm</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-md-4 col-sm-6 col-lg-2">
+                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">
+                        Agile Accounting Links
+                    </h5>
+
+                    <ul class="footer_ul_amrc">
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> Ab² Institute of accounting</a></li>
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> AGILE Ac careers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container" style="text-align:left;">
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <p class=" text-center flo" style="font-size: 0.7rem;">All Rights Reserved Agile Accounting @2022
+                    </p>
+                </div>
+                <div class="col-lg-6 col-sm-12" style="float:flex-end;">
+                    <a href=" privacypolicy.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Privacy
+                        policy</a>
+                    <a href="Accessibility Statement.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Accessibility
+                        statement</a>
+                    <a href="contact us.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Contact
+                        us</a>
+                    <a href="Terms of Use.html" class="text-center"
+                        style="font-size: 0.7rem;padding:0%;color: white;">Terms of
+                        use</a>
+                </div>
+            </div>
+            <ul class="social_footer_ul">
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/agile-accounting/"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <!-- .site-footer -->
+    <script src="app.js">
+    </script>
+    <script>
+        function toggleForm() {
+            document.body.classList.toggle('activeForm');
+        }
+    </script>
+    <script>
+        function classtoggle() {
+            const navs = document.querySelectorAll('.navbar-links')
+
+            navs.forEach(nav => nav.classList.remove('navbar-links-active'));
+        }
+
+        document.querySelector('.close-button')
+            .addEventListener('click', classtoggle);
+    </script>
+    <script src="form.js"></script>
+    <script>
+        // drowdown open and close on click
+
+        function myfunction1() {
+            document.getElementById("myDropdown").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction2() {
+            document.getElementById("myDropdown1").classList.toggle("show1");
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                document.getElementById("myDropdown2").classList.remove("show1");
+            }
+
+        }
+
+        function myfunction3() {
+            document.getElementById("myDropdown2").classList.toggle("show1");
+            if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                document.getElementById("myDropdown1").classList.remove("show1");
+            }
+            if (document.getElementById("myDropdown").classList.contains("show1")) {
+                document.getElementById("myDropdown").classList.remove("show1");
+            }
+        }
+    </script>
+</body>
+
+</html>
