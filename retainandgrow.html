@@ -124,9 +124,10 @@
                     <div class="navbar-links">
                         <ul>
                             <a href="#" class="close-button">&times;</a>
-                            <li><a style="font-size:0.7rem;text-align: left;" class="colr" href="#">company <i
-                                        class="arrow down"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem;text-align: left;" onclick="myfunction1()" class=" colr"
+                                    href="#">company
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile
                                             Accounting
                                             difference</a></li>
@@ -138,9 +139,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" class="colr"
-                                    href="#">Solutions <i class="arrow down" style="font-size: smaller;"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" onclick="myfunction2()"
+                                    class="colr" href="#">Solutions <i class="arrow down"
+                                        style="font-size: smaller;"></i></a>
+                                <ul id="myDropdown1" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
                                     <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
                                     <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
@@ -152,9 +154,10 @@
                                     <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.7rem;text-align:left;" href="#" class="colr">Resources <i
-                                        class="arrow down"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem;text-align:left;" onclick="myfunction3()" href="#"
+                                    class="colr">Resources
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown2" class="text" style="z-index:1;">
 
 
                                     <li
@@ -578,6 +581,41 @@
 
             document.querySelector('.close-button')
                 .addEventListener('click', classtoggle);
+        </script>
+        <script>
+            // drowdown open and close on click
+
+            function myfunction1() {
+                document.getElementById("myDropdown").classList.toggle("show1");
+                if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                    document.getElementById("myDropdown1").classList.remove("show1");
+                }
+                if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                    document.getElementById("myDropdown2").classList.remove("show1");
+                }
+
+            }
+
+            function myfunction2() {
+                document.getElementById("myDropdown1").classList.toggle("show1");
+                if (document.getElementById("myDropdown").classList.contains("show1")) {
+                    document.getElementById("myDropdown").classList.remove("show1");
+                }
+                if (document.getElementById("myDropdown2").classList.contains("show1")) {
+                    document.getElementById("myDropdown2").classList.remove("show1");
+                }
+
+            }
+
+            function myfunction3() {
+                document.getElementById("myDropdown2").classList.toggle("show1");
+                if (document.getElementById("myDropdown1").classList.contains("show1")) {
+                    document.getElementById("myDropdown1").classList.remove("show1");
+                }
+                if (document.getElementById("myDropdown").classList.contains("show1")) {
+                    document.getElementById("myDropdown").classList.remove("show1");
+                }
+            }
         </script>
         <script src="form.js"></script>
 </body>
