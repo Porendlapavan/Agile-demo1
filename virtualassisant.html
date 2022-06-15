@@ -16,8 +16,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-    <script src="app.js">
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -37,24 +37,7 @@
 
 
 
-
     <style>
-        .buttonstyl {
-            text-align: center;
-            font-size: 0.7rem;
-            color: white;
-            padding: 15px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: bold;
-            border-radius: 19px;
-            border-style: none;
-            background-color: red;
-        }
-
-
         .qualifications {
             background-color: white;
             text-align: center;
@@ -122,15 +105,17 @@
             <div class="outer-flex">
                 <a style="padding:0px;" href="index.html"><img src="logoagilel.png"
                         style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;"></a>
+
                 <nav class="navbar">
                     <a href="#" class="toggle-buttons" style="color: #4a0466; z-index:1;">
                         <i class="fas fa-bars"></i></a>
                     <div class="navbar-links">
                         <ul>
                             <a href="#" class="close-button">&times;</a>
-                            <li><a style="font-size:0.7rem;text-align: left;" class="colr" href="#">company <i
-                                        class="arrow down"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem;text-align: left;" onclick="myfunction1()" class=" colr"
+                                    href="#">Company
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile
                                             Accounting
                                             difference</a></li>
@@ -142,9 +127,10 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" class="colr"
-                                    href="#">Solutions <i class="arrow down" style="font-size: smaller;"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem; width: auto;text-align:left;" onclick="myfunction2()"
+                                    class="colr" href="#">Solutions <i class="arrow down"
+                                        style="font-size: smaller;"></i></a>
+                                <ul id="myDropdown1" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
                                     <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
                                     <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
@@ -156,9 +142,10 @@
                                     <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.7rem;text-align:left;" href="#" class="colr">Resources <i
-                                        class="arrow down"></i></a>
-                                <ul class="text" style="z-index:1;">
+                            <li><a style="font-size:0.7rem;text-align:left;" onclick="myfunction3()" href="#"
+                                    class="colr">Resources
+                                    <i class="arrow down"></i></a>
+                                <ul id="myDropdown2" class="text" style="z-index:1;">
 
 
                                     <li
@@ -211,31 +198,34 @@
 
             </div>
 
-            <div class="boxes ">
-                <div class="box" id=" header_heading">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12" id="header_heading"
+                    style="align-self: center; text-align:left;">
 
-                    <h1 style="color: rgb(16, 16, 62);padding-bottom: 20px;font-family:Chewi;">
+                    <h1 style="color: rgb(16, 16, 62);font-family:Chewi;">
                         Virtual assistants for accounting firms, big and small</h1>
-                    <p style="font-size: 1rem;padding-bottom: 20px;" id="header_para">
+                    <p id="header_para" style="font-size: 1.2rem;">
                         As business owners, we know that it’s impossible to do everything ourselves. From clearing your
                         inbox to scheduling meetings to data entry, if you’re buried in time-consuming administrative
-                        tasks, hiring a virtual assistant can help. Whether you need help with project management,
+                        tasks, hiring a virtual assistant can help.
+                        <!-- Whether you need help with project management,
                         social media, or more specific tasks, your TOA remote team member can provide experienced
-                        support.
+                        support. -->
                     </p>
 
-                    <div class="button1"><button class="buttonstyl" onclick="toggleForm()"><span>Book a
-                                chat</span></button></div>
+                    <div style="margin-bottom:2rem;" class="button1">
+                        <button class="buttonstyl" onclick="toggleForm()"><span>Book a
+                                chat</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="box">
+                <div class="col-lg-6 col-md-12 col-sm-12 " style="text-align: center;align-self: flex-end;">
                     <img id="header_image1" src="https://toaglobal.com/wp-content/uploads/2021/07/Hero_VA.png.webp"
-                        width="100%">
+                        style="max-width:470px;width:100%">
                 </div>
             </div>
         </div>
     </header>
-
-
     <!-----------------------------------------------------Our skilled accountant------------------------>
     <div class="skilledbookkeeper">
         <div class="container">
@@ -248,8 +238,7 @@
                 AGILE Global virtual assistants make support their focus so you can concentrate on growing and managing
                 your firm and clients. Decide which roles, skills or tasks you want outsourced and your TOA team will
                 then work for you in all facets of recruitment, onboarding, training and retention.</p>
-            <p
-                style="text-align:center; font-size:1rem; padding-top:1%; padding-left:5%;padding-right:5%;padding-bottom:2%">
+            <p style="text-align:center; padding-top:1%; padding-left:5%;padding-right:5%;padding-bottom:2%">
                 Experienced virtual assistance staff, just a click away.
             </p>
             <div style="width:100%; text-align: center;margin-bottom:2%;"><button class="buttonstyl"
@@ -266,8 +255,8 @@
             <div class="boxes">
 
                 <div class="box">
-                    <img
-                        src="https://toaglobal.com/wp-content/uploads/2021/07/Virtual-Assistant-Tom-Ricafort.jpeg.webp">
+                    <img src="https://toaglobal.com/wp-content/uploads/2021/07/Virtual-Assistant-Tom-Ricafort.jpeg.webp"
+                        style="width:100%;box-shadow: 10px 10px rgba(27, 90, 106, 0.356);border-radius: 10px;">
                 </div>
 
                 <div class="box h5matter" style="margin-top:3%;">
@@ -304,72 +293,72 @@
         <div class="container">
 
             <div class="activities-matter">
-                <h1 style="color:rgb(16, 16, 62);font-size:2rem; text-align:center;padding-bottom:2%;">What you get with
+                <h1 style="color:rgb(16, 16, 62); text-align:center;padding-bottom:2%;">What you get with
                     a Agile Virtual Assistant
                 </h1>
-                <p style="color:black;font-size:1rem; text-align:center; padding-left:5%;padding-right:5%">Through
+                <p style="color:black; text-align:center; padding-left:5%;padding-right:5%">Through
                     Agile,
                     you can recruit a talented virtual assistant to help your team at home manage corporate secretarial
                     tasks. </p>
-                <p style="color:black;font-size:1rem; text-align:center;padding-left:5%;padding-right:5%">
+                <p style="color:black; text-align:center;padding-left:5%;padding-right:5%">
                     Your friendly virtual assistant will help free up your time by managing your calendar and email,
                     making travel arrangements, setting up meetings, and handling anything else that might be bogging
                     you down.
                 </p>
 
-                <p style="color:black;font-size:1rem; text-align:center;padding-left:5%;padding-right:5%;">
+                <p style="color:black; text-align:center;padding-left:5%;padding-right:5%;">
                     Responsibilities our virtual assistants can take on include:
                 </p>
             </div>
 
             <div class="row ">
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding:10px;">
-                    <div style="text-align: left;padding: 20px;height: 100%;">
-                        <h1 style="color:#4a0466;font-size:1.5rem">Office Systems</h1>
+                    <div style="text-align: left;height: 100%;">
+                        <h1 style="color:#4a0466;">Office Systems</h1>
                         <p>Developing and maintaining office systems, including data management and filing</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding:10px;">
-                    <div style="text-align: left;padding: 20px;height: 100%;">
-                        <h1 style="color:#4a0466;font-size:1.5rem">Inquiries Handling</h1>
+                    <div style="text-align: left;height: 100%;">
+                        <h1 style="color:#4a0466;">Inquiries Handling</h1>
                         <p>Screening inquiries and requests, and handling them when appropriate. Dealing with incoming
                             email and post, often corresponding on behalf of the manager</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding:10px;">
-                    <div style="text-align: left;padding: 20px;height: 100%;">
-                        <h1 style="color:#4a0466;font-size:1.5rem">Documents</h1>
+                    <div style="text-align: left;height: 100%;">
+                        <h1 style="color:#4a0466;">Documents</h1>
                         <p>Producing documents, briefing papers, reports and presentations</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding:10px;">
-                    <div style="text-align: left;padding: 20px;height: 100%;">
-                        <h1 style="color:#4a0466;font-size:1.5rem">Scheduling</h1>
+                    <div style="text-align: left;height: 100%;">
+                        <h1 style="color:#4a0466;">Scheduling</h1>
                         <p>Organizing meetings and ensuring the manager is well prepared for meetings</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding:10px;">
-                    <div style="text-align: left;padding: 20px;height: 100%;">
-                        <h1 style="color:#4a0466;font-size:1.5rem">General Administration</h1>
+                    <div style="text-align: left;height: 100%;">
+                        <h1 style="color:#4a0466;">General Administration</h1>
                         <p>Assisting team members with general administration tasks. Bookkeeping tasks, managing
                             invoices, expenses and billings</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding:10px;">
-                    <div style="text-align: left;padding: 20px;height: 100%;">
-                        <h1 style="color:#4a0466;font-size:1.5rem">Client and Staff Liaison</h1>
+                    <div style="text-align: left;height: 100%;">
+                        <h1 style="color:#4a0466;">Client and Staff Liaison</h1>
                         <p>Building and developing relationships with clients, business partners and staff</p>
                     </div>
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12" style="padding:10px;">
-                    <div style="text-align: left;padding: 20px;height: 100%;">
-                        <h1 style="color:#4a0466;font-size:1.5rem">Research, Marketing, Social</h1>
+                    <div style="text-align: left;height: 100%;">
+                        <h1 style="color:#4a0466;">Research, Marketing, Social</h1>
                         <p>Handling varied tasks, including research, marketing, and social media tasks
 
                         </p>
@@ -405,14 +394,14 @@
                 All of our virtual assistants are friendly and personable with strong communication skills.</p>
             <p>Typical experience and qualifications include:</p>
             <div class="row ">
-                <div class="col-lg-3 col-md-6 col-sm-12" style="padding:20px;">
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
                     <div style="background-color:rgb(239, 192, 230);text-align: left;padding: 20px;height: 100%;">
                         <h1 style="color:#4a0466;">+Experience</h1>
                         <p>Work experience as a Corporate Secretary
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12" style="padding:20px;">
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
                     <div style="background-color:rgb(239, 192, 230);text-align: left;padding: 20px;height: 100%;">
                         <h1 style="color:#4a0466;">+Software</h1>
                         <p>Experience with systems including Xero/XPM, Now Infinity, Microsoft Office
@@ -420,7 +409,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12" style="padding:20px;">
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
                     <div style="background-color:rgb(239, 192, 230);text-align: left;padding: 20px;height: 100%;">
                         <h1 style="color:#4a0466;">+Knowledge</h1>
                         <p>
@@ -428,7 +417,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12" style="padding:20px;">
+                <div class="col-lg-3 col-md-6 col-sm-12 qualification" style="padding:20px;">
                     <div style="background-color:rgb(239, 192, 230);text-align: left;padding: 20px;height: 100%;">
                         <h1 style="color:#4a0466;">+Time management</h1>
                         <p>Excellent time-management skills
@@ -444,7 +433,7 @@
 
     <div class="featuredstories" style="background-color: rgb(172, 236, 214);">
         <div class="container">
-            <h1 style="text-align:center; padding:5%;font-size:2rem;color:darkblue ;margin-bottom:0%">At AGILE, we
+            <h1 style="text-align:center; padding:5%;color:rgb(28, 28, 96) ;margin-bottom:0%">At AGILE, we
                 enable
                 accounting firms to do their best work by supplying resources from our team of top global talent</h1>
             <div class="row" style="margin-top:2%">
@@ -455,10 +444,10 @@
                                 style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
                                 src="https://i.postimg.cc/HW2cPZqx/accountant.png"></a>
                         <a href="accountant.html">
-                            <h4 style="color:red;font-size:1.1rem">
+                            <h4 style="color:red;">
                                 Accountant
                             </h4>
-                            <p style="font-size:0.9rem">
+                            <p>
                                 Accountants to handle accounting functions including sales
                                 invoicing, cashflows, payables and receivables, and data entry.
                             </p>
@@ -481,10 +470,10 @@
                                 style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
                                 src="https://i.postimg.cc/bYRJym9t/cpaimage.png"></a>
                         <a href="cpa.html">
-                            <h4 style="color:red;font-size:1.1rem">
+                            <h4 style="color:red;">
                                 CPA
                             </h4>
-                            <p style="font-size:0.9rem">
+                            <p>
                                 Chartered professional accountants who are ready to support your team with
                                 client-specific deliverables and tasks.
                             </p>
@@ -507,10 +496,10 @@
                                 style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
                                 src="https://i.postimg.cc/2SgB9m2g/bookkeepersimg.png"></a>
                         <a href="Bookkeeper.html">
-                            <h4 style="color:red;font-size:1.1rem">
+                            <h4 style="color:red;">
                                 Bookkeeper
                             </h4>
-                            <p style="font-size:0.9rem">
+                            <p>
                                 Our bookkeeping experts can help firms and organizations make better operating,
                                 investing and budgeting decisions.
                             </p>
@@ -533,10 +522,10 @@
                                 style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
                                 src="https://i.postimg.cc/Hs7h0hvJ/admins.png"></a>
                         <a href="administrator.html">
-                            <h4 style="color:red;font-size:1.1rem">
+                            <h4 style="color:red;">
                                 Administrator
                             </h4>
-                            <p style="font-size:0.9rem">
+                            <p>
                                 Outsource administrative tasks like data entry, CRM maintenance, reporting and ad hoc
                                 activities.
                             </p>
@@ -555,8 +544,7 @@
             </div>
 
             <div style="width:100%; text-align: center;padding-bottom: 4%;background-color:rgb(172, 236, 214); ;">
-                <a href="index.html"><button class="buttonstyl"
-                        style="font-size:0.7rem; background-color:crimson"><span>Explore All
+                <a href="index.html"><button class="buttonstyl" style=" background-color:crimson"><span>Explore All
                             Solutions</span></button></div></a>
 
         </div>
