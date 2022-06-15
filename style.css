@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Helvetica&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 /* @import url("//db.onlinewebfonts.com/c/d9a58a393d946d86051fbd9a0b594d2f?family=Audrey"); */
-@import url("https://fonts.googleapis.com/css?family=Libre Baskerville");
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+/* @import url("https://fonts.googleapis.com/css?family=Libre Baskerville");
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap'); */
 
 body {
   margin: 0;
@@ -181,18 +181,21 @@ body {
 
 /* header for paracuit image container */
 .header2 {
-  background-color: #f7f5f1;
+  background-color: #f4d2b9;
   text-align: center;
-  /* background-image: url("https://toaglobal.com/wp-content/uploads/2021/08/Bucket-two-image-560x560-1.png"); */
+  background-image: url("https://toaglobal.com/wp-content/uploads/2021/08/Bucket-two-image-560x560-1.png");
   /* background-image: linear-gradient(45deg, white, rgb(226, 149, 226)50%); */
   background-position: center;
-  /* background-size: 280px 270px; */
+  background-size: 280px 270px;
   background-repeat: no-repeat;
   padding: 10vw;
   padding-top: 55px;
   padding-bottom: 45px;
 }
-
+.header2 p{
+  color:#4a0466;
+  line-height:1.4em;
+}
 /* button style */
 /* .buttonstyl {
   text-align: center;
@@ -210,8 +213,8 @@ body {
 } */
 
 .buttonstyl {
-  border-radius: 4px;
-  background-color: #c491a5;
+  border-radius: 20px;
+  background-color: #e52826;
   border: none;
   color: #FFFFFF;
   border-style: solid;
@@ -219,7 +222,7 @@ body {
   text-align: center;
   width: auto;
   font-size: 1rem;
-  padding: 10px;
+  padding:10px 20px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -227,11 +230,11 @@ body {
 
 }
 
-.buttonstyl:hover {
+/* .buttonstyl:hover {
   background-color: rgb(203, 14, 96);
   box-shadow: 0 0 20px 0px red;
   border-style: none;
-}
+} */
 
 .but:hover {
   background-color: rgb(203, 14, 96);
@@ -275,7 +278,7 @@ body {
 }
 
 .textcol {
-  color: red;
+  color: #ee5453;
 }
 
 .header4 {
@@ -323,11 +326,16 @@ body {
 .text a:hover {
   color: #fff;
   text-decoration: none;
-  color: orange;
+  color:#4a0466;
   font-weight: 400;
   /* font-style: normal; */
 }
 
+.text2 :hover
+{
+  color:black;
+  text-decoration-color: red;
+}
 .text1 a:hover {
   color: #fff;
   text-decoration: none;
@@ -640,18 +648,58 @@ nav ul {
 }
 
 nav ul li a {
-
+  
   text-align: left;
   font-family: 'Poppins';
   color: rgb(8, 5, 5);
 
 }
+nav ul li :hover{
+  text-decoration-color: red;}
+nav ul li a:hover{
+  text-decoration:none;
+
+  color: black;
+}
+@media screen and (min-width:952px){
+  nav ul li a.text2 {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+  nav ul li a.text2 {
+    position: relative;
+  }
+
+  nav ul li a.text2:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 2px;
+    bottom: 0.75rem;
+    left: 0.7rem;
+    background-color: red;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav ul li a.text2:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
 
 nav ul li ul li a {
-  padding: 2px;
   text-align: left;
   z-index: 5;
-  color: white;
+  color: gray;
+  font-size: 0.75rem;
+  padding: 2px;
+  text-align: center;
+  z-index: index 5;
 }
 
 nav ul li ul li {
@@ -659,17 +707,20 @@ nav ul li ul li {
   padding: 0px;
   width: 90%;
   background: none;
+  padding: 3px;
+  color:#4b0865;
 }
 
 nav ul li ul {
-  background-color: #333d79ff;
+  background-color: white;
   text-align: left;
   padding: 1rem;
   padding-left: 1rem;
   /* border-style: solid; */
   /* border-color: #ddd; */
-  box-shadow: 1px 1px 7px 5px rgb(231, 206, 212);
-  transform: rotate3d(0, 1, 0, 35deg);
+  /* box-shadow: 1px 1px 7px 5px rgb(231, 206, 212); */
+  /* transform: rotate3d(0, 1, 0, 35deg); */
+
 
 }
 
@@ -678,7 +729,7 @@ nav ul li ul {
   position: fixed;
   right: 0;
   align-self: center;
-  color: red;
+  color:white;
 }
 
 .close-button:hover {
@@ -694,7 +745,7 @@ nav ul li ul::before {
   height: 0;
   border-style: solid;
   border-width: 0 10px 10px 10px;
-  border-color: transparent transparent #333d79ff transparent;
+  border-color: transparent transparent white transparent;
   position: absolute;
   top: -10px;
   left: 30%;
@@ -729,14 +780,19 @@ a:hover {
     cursor: pointer;
     position: absolute;
   }
-
+.text a:hover {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  /* font-style: normal; */
+}
   .show1 {
     display: contents;
   }
 
   nav ul {
     padding: 10px;
-    background: rgb(5, 5, 20);
+    background:#4a0466;
     position: fixed;
     top: 0px;
     bottom: -15px;
@@ -760,19 +816,22 @@ a:hover {
     color: red;
     text-align: left;
   }
-
+  nav ul li ul li {
+    color:#b4e9e1;
+  }
   nav ul li ul li a {
     width: fit-content;
     display: flex;
+    color: white;
   }
 
-  /* nav ul li ul li a:hover {
-    background-color: rgb(55, 52, 52);
-    border-style: solid;
-    border-color: white;
-    transform: scale(1.091);
+  nav ul li ul li a:hover {
+    text-decoration: none;
 
-  } */
+   color: white;
+
+
+  }
 
   .close-button {
     font-size: larger;
@@ -843,7 +902,7 @@ a:hover {
   }
 
   .navbar ul li ul li a {
-    font-size: 10px;
+    font-size: 0.75rem;
     padding: 2px;
     z-index: 1;
     width: auto;
@@ -860,12 +919,6 @@ a:hover {
 
 
 
-nav ul li ul li a {
-  font-size: 10px;
-  padding: 2px;
-  text-align: center;
-  z-index: index 5;
-}
 
 /* header 5new */
 .contain {
@@ -1034,9 +1087,10 @@ body.activeForm .overlay-form {
 
 
 body h1 {
-  font-size: 1.7rem;
-  line-height: 1.535;
+  font-size: 2.5rem;
+  /* line-height: 1.535; */
   /* font-weight: 500; */
+  margin-bottom: 2rem;
   font-family: Georgia, Times, 'Times New Roman', serif;
   font-weight: 400;
   letter-spacing: 0.06ch;
@@ -1056,13 +1110,15 @@ body h1 {
 
 
 body p {
-
+  line-height:1.1em;
   font-family: 'Roboto', 'sans-serif';
-
-  line-height: 1.735;
+  /* line-height: 1.735; */
   font-weight: 300;
   /* font-family: slick; */
+  font-family: Roboto,
+  sans-serif;
   font-size: 1.3rem;
+  margin-bottom:1.2rem;
 }
 
 .header5 p {
@@ -1087,4 +1143,21 @@ body .buttonstyl {
   .button1 {
     text-align: center;
   }
+}
+#header_image1 {
+    width: 100%;
+  max-width: 370px;
+
+}
+@media screen and (max-width: 480px) {
+body h1{
+ font-size: 1.7rem;
+}
+body p{
+  font-size: 1.1rem;
+}
+#header_image1{
+  max-width: 200px;
+  width:100%;
+}
 }
