@@ -186,7 +186,7 @@ body {
   background-image: url("https://toaglobal.com/wp-content/uploads/2021/08/Bucket-two-image-560x560-1.png");
   /* background-image: linear-gradient(45deg, white, rgb(226, 149, 226)50%); */
   background-position: center;
-  background-size: 280px 270px;
+  background-size: 350px 350px;
   background-repeat: no-repeat;
   padding: 10vw;
   padding-top: 55px;
@@ -217,7 +217,7 @@ body {
   background-color: #e52826;
   border: none;
   color: #FFFFFF;
-  border-style: solid;
+  /* border-style: solid; */
   border-width: 1px;
   text-align: center;
   width: auto;
@@ -226,15 +226,14 @@ body {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  box-shadow: 5px 5px gray;
+  /* box-shadow: 5px 5px gray; */
 
 }
 
-/* .buttonstyl:hover {
-  background-color: rgb(203, 14, 96);
-  box-shadow: 0 0 20px 0px red;
-  border-style: none;
-} */
+.buttonstyl:hover {
+
+  box-shadow: none;
+}
 
 .but:hover {
   background-color: rgb(203, 14, 96);
@@ -272,19 +271,25 @@ body {
 .header3 {
   background-color: white;
   text-align: center;
-  padding: 50px;
+  padding: 2rem;
   padding-top: 45px;
   padding-bottom: 45px;
+  font-family: serif;
+}
+.header3 p{
+  line-height: 1.55rem;
+  color:rgba(0, 0, 0, 0.756583);
 }
 
 .textcol {
   color: #ee5453;
+
 }
 
 .header4 {
   text-align: center;
 
-  padding: 50px;
+  padding: 2rem;
   padding-top: 45px;
   padding-bottom: 45px;
   background-color: #4b0865;
@@ -311,9 +316,32 @@ body {
   border-radius: 15px;
   margin-bottom: 50px;
   background-color: white;
+  font-family:serif;
+
+}
+#card div {
+  bottom: 0;
+  overflow: hidden;
+  /* box-sizing: border-box; */
+}
+
+#card div img {
+
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  transition: transform 01.5s ease;
 
 }
 
+#card img:hover {
+  transform: scale(1.08);
+
+}
+#card p{
+  color:rgba(0, 0, 0, 0.756583);
+  line-height: 1.4rem;
+}
 /* #card:hover {
   -ms-transform: scale(1.02); */
 /* IE 9 */
@@ -353,11 +381,19 @@ body {
 
 /* header 5 */
 .header5 {
-  background-color: rgb(223, 235, 237);
+  background-color: #b4e9e1;
   text-align: center;
   padding: 50px;
 }
-
+#header5_img{
+  text-align: right;
+  justify-content: flex-end;
+}
+@media screen and (max-width:768px){
+  #header5_img {
+    text-align: center;
+  }
+}
 #h5matter {
   text-align: left;
   padding-right: 250px;
@@ -377,7 +413,11 @@ body {
   padding-bottom: 45px;
   width: 40%;
 }
+.header6 p{
+  line-height:1.55rem;
+  color:rgba(0, 0, 0, 0.781);
 
+}
 #h6image {
   justify-content: center;
   width: 100%;
@@ -388,12 +428,17 @@ body {
   text-align: start;
   justify-content: center;
   padding-left: 20px;
+  padding-right:10px;
 
 }
 
 /* header7 */
 .header7 {
   text-align: center;
+  background-color: #ee5453;
+}
+.header7 p{
+  line-height:1.55rem;
 }
 
 /* Featuredstories */
@@ -419,6 +464,7 @@ footer {
   letter-spacing: 0.08ch;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
+  font-weight: 600;
 }
 
 .pt2 {
@@ -431,6 +477,7 @@ footer p {
   color: white;
   padding-bottom: 0px;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .mb10 {
@@ -454,7 +501,7 @@ footer p {
 
 .footer_ul_amrc li a {
   color: white;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   display: block;
   padding: 0.2px;
   /* font-size: 10px; */
@@ -691,7 +738,44 @@ nav ul li a:hover{
     transform: scaleX(1);
   }
 }
+ .text3{
+   visibility: visible;
+   transform: scaleX(1);
+ }
 
+ .text3 {
+   position: relative;
+ }
+
+.text3:before {
+   content: "";
+   position: absolute;
+   width: 70%;
+   margin-left: 10%;
+   margin-right: 10%;
+   height: 2px;
+   bottom: 0.75rem;
+   left: 0rem;
+   background-color: red;
+   visibility: hidden;
+   transform: scaleX(0);
+   transition: all 0.5s ease-in-out;
+ }
+
+ .text3:hover:before {
+   visibility: visible;
+   transform: scaleX(1);
+ }
+ a.text4{
+  color:#4a0466;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: #ee5453;
+ }
+ a.text4:hover{
+  position: relative;
+  right:0.4rem;
+  color:#ee5453;
+ }
 nav ul li ul li a {
   text-align: left;
   z-index: 5;
@@ -922,7 +1006,7 @@ a:hover {
 
 /* header 5new */
 .contain {
-  width: 100%;
+  width: 40%;
 
 }
 
@@ -1115,8 +1199,7 @@ body p {
   /* line-height: 1.735; */
   font-weight: 300;
   /* font-family: slick; */
-  font-family: Roboto,
-  sans-serif;
+  font-family: Roboto,sans-serif;
   font-size: 1.3rem;
   margin-bottom:1.2rem;
 }
