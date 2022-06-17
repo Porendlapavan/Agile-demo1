@@ -3,7 +3,7 @@
 @font-face {
   font-family: chewi;
   src: local('chewi'),
-    url("Fontspring-DEMO-chewie-medium.otf") format("truetype");
+    url("Chewie-Medium.otf") format("truetype");
   font-weight: 400;
 }
 
@@ -797,6 +797,8 @@ nav ul li a:hover {
   visibility: visible;
   transform: scaleX(1);
 }
+
+
 
 a.text4 {
   color: #4a0466;
