@@ -533,7 +533,13 @@ footer p {
   color: red;
 }
 
+.colr1 {
+  color: white;
+}
 
+.colr1:hover {
+  color: #e52826;
+}
 
 /* .fleft {
   float: left;
