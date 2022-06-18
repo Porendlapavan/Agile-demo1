@@ -4,7 +4,6 @@
   font-family: chewi;
   src: local('chewi'),
     url("Chewie-Medium.otf") format("truetype");
-  font-weight: 400;
 }
 
 * body {
@@ -19,6 +18,11 @@
   padding: 10px;
   padding-bottom: 0%;
   margin-bottom: 0%;
+}
+
+.main_header p {
+  font-family: chewi;
+  line-height: 1.5455rem;
 }
 
 .headup {
@@ -455,7 +459,21 @@
 .header7 {
   text-align: center;
   background-color: #ee5453;
+  /* background-image: url(https://toaglobal.com/wp-content/themes/generatepress_child/images/grid-bg.png); */
 }
+
+/* .header7b::before {
+  content: "";
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-image: url(https://toaglobal.com/wp-content/themes/generatepress_child/images/grid-bg.png);
+  background-position: center;
+  position: fixed;
+  background-repeat: repeat;
+  opacity: 0.1;
+} */
 
 .header7 p {
   line-height: 1.55rem;
@@ -517,6 +535,13 @@ footer p {
   display: block;
   width: fit-content;
   padding-bottom: 10px;
+}
+
+.headin5_amrc {
+  font-size: 1rem;
+  color: cyan;
+  font-family: chewi;
+  color: #b4e9e1;
 }
 
 .footer_ul_amrc li a {
@@ -723,8 +748,9 @@ nav ul {
 nav ul li a {
 
   text-align: left;
-  font-family: 'Poppins';
-  color: rgb(8, 5, 5);
+  font-family: chewi;
+  color: #2d0044;
+
 
 }
 
@@ -820,6 +846,7 @@ nav ul li ul li a {
   padding: 2px;
   text-align: center;
   z-index: index 5;
+
 }
 
 nav ul li ul li {
@@ -1128,10 +1155,10 @@ a:hover {
   top: 0px;
   width: 100%;
   height: 100vh;
-  background-color: rgba(93, 48, 200, 0.5);
+  background-color: #4a0466e4;
   z-index: -10;
   opacity: 0;
-  padding: 80px 100px;
+  padding: 4rem 23rem 0 23rem;
   overflow: scroll;
   box-sizing: border-box;
 
@@ -1140,7 +1167,18 @@ a:hover {
 .over1 {
   padding: 5px;
   width: 100%;
+  background-color: #b4e9e1;
 }
+
+.form-element {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-element label {
+  text-align: left;
+}
+
 
 
 .overlay-form .close-btn {
@@ -1159,20 +1197,22 @@ a:hover {
 }
 
 .overlay-form h1 {
-  font-size: 1rem;
-  color: rgb(53, 53, 82);
+  font-size: 2rem;
+  color: #4a0466;
 }
 
 .overlay-form p {
-  font-size: 0.7rem;
+  font-size: 1rem;
   color: rgb(53, 53, 82);
   margin: 25px 0px 30px;
+  line-height: 1.545rem
 }
 
 .overlay-form label {
   display: block;
   font-size: 0.7rem;
-  color: rgb(53, 53, 82);
+  color: #4a0466;
+  font-weight: 600;
   margin-bottom: 5px;
   padding-top: 10px;
 }
@@ -1189,7 +1229,76 @@ a:hover {
   outline: none;
 }
 
+@media screen and (max-width:1024px) {
+  .overlay-form {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #4a0466e4;
+    z-index: -10;
+    opacity: 0;
+    padding: 4rem 15rem 0 15rem;
+    overflow: scroll;
+    box-sizing: border-box;
 
+  }
+}
+
+@media screen and (max-width:769px) {
+  .overlay-form h1 {
+    font-size: 1rem;
+    color: #4a0466;
+  }
+
+  .overlay-form p {
+    font-size: 0.8rem;
+    color: rgb(53, 53, 82);
+    margin: 25px 0px 30px;
+    line-height: 1.545rem
+  }
+
+  .overlay-form {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #4a0466e4;
+    z-index: -10;
+    opacity: 0;
+    padding: 80px 100px;
+    overflow: scroll;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .overlay-form h1 {
+    font-size: 1rem;
+    color: #4a0466;
+  }
+
+  .overlay-form p {
+    font-size: 0.8rem;
+    color: rgb(53, 53, 82);
+    margin: 25px 0px 30px;
+    line-height: 1rem
+  }
+
+  .overlay-form {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #4a0466e4;
+    z-index: -10;
+    opacity: 0;
+    padding: 4rem 2rem 0 2rem;
+    overflow: scroll;
+    box-sizing: border-box;
+
+  }
+}
 
 .overlay-form button {
   margin-top: 10px;
@@ -1210,10 +1319,11 @@ body.activeForm .overlay-form {
 }
 
 
-
+/* end of form style */
 
 .qualification div {
   box-shadow: 5px 5px rgb(116, 114, 114);
+  background-color: #f0cbe6;
 }
 
 .qualification h1 {
@@ -1222,6 +1332,7 @@ body.activeForm .overlay-form {
 
 .qualification p {
   font-size: 1rem;
+  line-height: 1.345rem;
 }
 
 
@@ -1238,6 +1349,7 @@ body p {
 
 .header5 p {
   font-size: 1.4rem;
+  line-height: 1.788rem;
 }
 
 body .buttonstyl {
@@ -1290,4 +1402,8 @@ body h1 {
   font-family: Chewi;
 
   font-weight: 400
+}
+
+body h4 {
+  font-family: chewi;
 }
