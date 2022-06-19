@@ -22,6 +22,7 @@
 
 .main_header p {
   font-family: chewi;
+  font-size: 1.1rem;
   line-height: 1.5455rem;
 }
 
@@ -290,12 +291,14 @@
 .header3 p {
   line-height: 1.55rem;
   color: rgba(0, 0, 0, 0.756583);
+  font-size: 1rem;
 }
 
 .textcol {
   color: #ee5453;
   font-family: chewi;
 }
+
 
 .header4 {
   text-align: center;
@@ -486,8 +489,8 @@
 
 /* contact us */
 .in-image-icon:hover {
-  border-style: solid;
-  color: rgb(84, 71, 71);
+  /* border-style: solid; */
+  color: #ee5453;
 }
 
 /* footer */
@@ -865,10 +868,8 @@ nav ul li ul {
   padding-left: 1rem;
   /* border-style: solid; */
   /* border-color: #ddd; */
-  /* box-shadow: 1px 1px 7px 5px rgb(231, 206, 212); */
+  box-shadow: -1px 5px 20px rgb(58 56 146 / 15%) !important;
   /* transform: rotate3d(0, 1, 0, 35deg); */
-
-
 }
 
 .close-button {
@@ -1322,8 +1323,8 @@ body.activeForm .overlay-form {
 /* end of form style */
 
 .qualification div {
-  box-shadow: 5px 5px rgb(116, 114, 114);
   background-color: #f0cbe6;
+  box-shadow: 5px 5px 20px rgb(58 56 146 / 15%) !important;
 }
 
 .qualification h1 {
