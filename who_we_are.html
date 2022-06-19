@@ -39,6 +39,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
+            background-color: white;
         }
 
         .image-header4 {
@@ -90,13 +91,30 @@
         .header5 p {
             font-size: 1rem;
         }
+
+        #card img:hover {
+            transform: scale(1);
+
+        }
+
+        .page1header2 {
+            background-color: white;
+            text-align: center;
+            background-image: url("https://toaglobal.com/wp-content/uploads/2021/07/pink-lightbulb-2.png.webp");
+            background-position: center;
+            background-size: 191px 202px;
+            background-repeat: no-repeat;
+            padding: 10vw;
+            padding-top: 55px;
+            padding-bottom: 45px;
+        }
     </style>
 
 
 </head>
 <!-- -------------------g form------------------- -->
 <div class="overlay-form" style=" -webkit-background-composite: padding;">
-    <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+    <div class="  over1" style="padding: 15px;">
         <div style="text-align:center">
             <h1 style="font-weight:bold;">Book a chat</h1>
             <p>To find out how agile-accounting can assist your firm, please enter your details and one
@@ -138,7 +156,7 @@
 <body>
 
     <!---------------------HEADER------------------------->
-    <div style="background-color:#4a0466;height: 1rem;"></div>
+    <div style="background-color:#4a0466;height: 1.565rem;"></div>
     <header class="main_header">
 
         <div class="container">
@@ -151,8 +169,8 @@
                     <div class="navbar-links">
                         <ul>
                             <a href="#" class="close-button">&times;</a>
-                            <li><a style="font-size:0.9rem;text-align: left;" onclick="myfunction1()" class=" colr"
-                                    href="#">company
+                            <li><a style="font-size:0.75rem;text-align: left;font-weight:500;" onclick="myfunction1()"
+                                    class="colr text2" href="#">Company
                                     <i class="arrow down"></i></a>
                                 <ul id="myDropdown" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile
@@ -162,12 +180,12 @@
                                     <li><a style="text-align: left;" href="who_we_are.html">Who we are</a></li>
                                     <li><a style="text-align: left;" href="contact us.html">contact us</a></li>
                                     <li><a style="text-align: left;" href=""><i class='fas fa-external-link-alt'></i>
-                                            AGILE Ac careers</a>
+                                            Agile careers</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.9rem; width: auto;text-align:left;" onclick="myfunction2()"
-                                    class="colr" href="#">Solutions <i class="arrow down"
+                            <li><a style="font-size:0.75rem; width: auto;text-align:left;font-weight:500;"
+                                    onclick="myfunction2()" class="colr text2" href="#">Solutions <i class="arrow down"
                                         style="font-size: smaller;"></i></a>
                                 <ul id="myDropdown1" class="text" style="z-index:1;">
                                     <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
@@ -181,26 +199,22 @@
                                     <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
                                 </ul>
                             </li>
-                            <li><a style="font-size:0.9rem;text-align:left;" onclick="myfunction3()" href="#"
-                                    class="colr">Resources
+                            <li><a style="font-size:0.75rem;text-align:left;font-weight:500;" onclick="myfunction3()"
+                                    href="#" class="colr text2">Resources
                                     <i class="arrow down"></i></a>
-                                <ul id="myDropdown2" class="text" style="z-index:1;">
+                                <ul id="myDropdown2" class="text wid" style="z-index:1;">
 
-
-                                    <li
-                                        style="text-align:left;font-weight: bold;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                    <li style="text-align:left;font-weight: bold;font-size: 0.7rem;">
                                         News and Events
                                     </li>
                                     <li><a style="text-align: left;" href="">Announcements</a></li>
-                                    <li
-                                        style="text-align: left;font-weight: bold;  ;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                                    <li style="text-align: left;font-weight: bold;  ;font-size: 0.7rem;">
                                         Education</li>
                                     <li><a style="text-align: left;" href="bolgs.html">Blog</a></li>
                                     <li><a style="text-align: left;" href="">Podcasts</a></li>
 
-
                                     <li style="border-radius:0px 0px 0 0;text-align: left;  font-weight:
-                                      bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
+                      bold;font-size: 0.75rem;">
                                         Free Tools
                                     </li>
                                     <li><a style="text-align: left;" href="book a statagy session.html">Book a
@@ -209,7 +223,8 @@
                                     </li>
                                     <li><a style="text-align: left;" href="remote accounting team.html">Remote team
                                             report</a></li>
-                                    <li><a style="text-align: left;" href="">Virtual assistant report</a></li>
+                                    <li><a style="text-align: left;" href="virtualassisantreport.html">Virtual assistant
+                                            report</a></li>
                                     <li><a style="text-align: left;" href="retainandgrow.html">Retain and grow talent
                                             guide</a></li>
                                     <li><a style="text-align: left;" href="scaleandgrow.html">Scale and grow your
@@ -223,7 +238,7 @@
                                     <span class="screen-reader-text"></span>
                                     <input type="search" class="search-field" placeholder="Search" value="" name="s"
                                         title="Search for:" style="border-radius:0.7rem;padding:2px; width:
-                                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
+                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
                                 </label>
                                 <button type="submit" class="search-submit topnov" value="Search"
                                     style="border:none;outline:none;background:none"><span class="sr-only">Search</span>
@@ -238,21 +253,23 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12" id=" header_heading" style="align-self: center;">
+                <div class="col-lg-6 col-md-12 col-sm-12" id=" header_heading" style="align-self: center;padding:1rem">
 
-                    <h1 style="color: #4a0466;padding-bottom: 20px;">We build skills, teams, businesses and
+                    <h1 style="color: #4a0466;margin-top:1rem">We build skills, teams, businesses and
                         economies through brilliant people</h1>
-                    <p style="padding-bottom: 20px;" id="header_para">
-                        Founded in 20__, AGILE AC supports firms in the accounting industry with outsourced accountants,
+                    <p style="color: #4a0466;" id=" header_para">
+                        Founded in 2013, AGILE AC supports firms in the accounting industry with outsourced accountants,
                         bookkeepers, and professionals in other financial services and administrative roles.
                     </p>
 
-                    <div class="button1"><button class="buttonstyl" onclick="toggleForm()"><span>Book a
+                    <div style="margin-bottom:3rem;padding:0" class="button1"><button class="buttonstyl"
+                            onclick="toggleForm()"><span>Book a
                                 chat</span></button></div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 " style="text-align: center;align-self: flex-end;">
                     <img id="header_image1"
-                        src="https://toaglobal.com/wp-content/uploads/2021/07/Hero-2-ladies.png.webp" width="100%">
+                        src="https://toaglobal.com/wp-content/uploads/2021/07/Hero-2-ladies.png.webp"
+                        style="max-width: 470px;width:100%;">
                 </div>
             </div>
         </div>
@@ -269,8 +286,8 @@
                 AGILE Global has become one of the Philippines’ largest employers in the accounting industry,
                 based on a comparison of staff numbers at the top 5 Philippine accounting firms.</p>
 
-            <a href="The Agile ac difference.html"
-                style="text-decoration:underline;font-size: 1rem;color: darkblue;font-weight: bold;">Learn more
+            <a href="The Agile ac difference.html" class="text4"
+                style="text-decoration:underline;font-size: 1rem;font-weight: bold;">Learn more
                 about
                 the AGILE AC Difference<i class="bi bi-chevron-right"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
@@ -298,7 +315,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/07/craig.jpg.webp">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%;">
+                        <div class="description-header4" style=" padding:10px;height:100%;background-color: white;">
 
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Craig Mansell
@@ -321,7 +338,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/07/Gemma-Gaerlan.jpg.webp">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%;">
+                        <div class="description-header4" style=" padding:10px;height:100%;background-color: white;">
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Gemma Gaerlan
                             </h4>
@@ -342,7 +359,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/07/Stephen.jpg.webp">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%;">
+                        <div class="description-header4" style=" padding:10px;height:100%;background-color: white;">
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Stephen Watts
                             </h4>
@@ -363,7 +380,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/08/Richard-Smallcombe.jpg">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%;">
+                        <div class="description-header4" style=" padding:10px;height:100%;background-color: white;">
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Richard Smallcombe
                             </h4>
@@ -384,7 +401,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/07/Peter.jpg.webp">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%;">
+                        <div class="description-header4" style=" padding:10px;height:100%;background-color: white;">
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Peter Brown
                             </h4>
@@ -405,7 +422,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/07/kelly.jpg.webp">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%; ">
+                        <div class="description-header4" style=" padding:10px;height:100%; background-color: white;">
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Kelly Segat
                             </h4>
@@ -426,7 +443,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/07/Ben-Fisher.jpg.webp">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%;">
+                        <div class="description-header4" style=" padding:10px;height:100%;background-color: white;">
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Ben Fisher
                             </h4>
@@ -447,7 +464,7 @@
                             <img src="https://toaglobal.com/wp-content/uploads/2021/07/Ben.jpg.webp">
                         </div>
 
-                        <div class="description-header4" style=" padding:10px;height:100%;">
+                        <div class="description-header4" style=" padding:10px;height:100%;background-color: white;">
                             <h4 style="font-size: 0.9rem;color: crimson; margin-left:auto;margin-right: auto; ">
                                 Ben Vickers
                             </h4>
@@ -479,12 +496,12 @@
     <div class="header5" style="background-color:white;">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12" style="align-self: flex-end;">
+                <div class="col-lg-4 col-md-5 col-12" style="align-self: center;">
                     <img src="https://toaglobal.com/wp-content/uploads/2021/07/Leadership-Photo_Nick-Sinclair_470x570_Deep-Purple.jpeg.webp"
-                        style="width:100%;box-shadow: 10px 10px rgba(255, 186, 255, 0.42);border-radius: 10px;">
+                        style="height:100%;width:100%;">
                 </div>
 
-                <div class="col-lg-6 col-md-12 col-sm-12 h5matter" style="text-align:left;padding:10px;">
+                <div class="col-lg-8 col-12 h5matter" style="text-align:left;padding:1rem;padding-left:2rem">
                     <h1 style="color: crimson;padding-bottom:7px;">
                         Meet Nick, our founder
                     </h1>
@@ -496,9 +513,9 @@
                         In December of 20--, ---- founded AGILE AC to expand his
                         own accounting and financial planning business. He established
                         a remote accounting team in the Philippines and almost immediately
-                        began to see the benefits. By outsourcing some of his accounting
-                        department, he saw work being completed faster, with better attention
-                        to detail, and more profitably.
+                        began to see the benefits. By outsourcing some of his accounting.
+                        <!-- department, he saw work being completed faster, with better attention
+                        to detail, and more profitably. -->
                     </p>
                     <p>
                         In April of 2014, Nick – armed with knowledge of the pitfalls
@@ -512,13 +529,13 @@
                         accounting services to clients in the industry. Within a few months,
                         AGILE’s overall team grew to 103 team members serving 29 accounting firms in Australia.
                     </p>
-                    <p>
+                    <!-- <p>
                         Built by a firm owner for firm owners, AGILE Global is set apart
                         from other outsourcing companies. Nick’s first-hand experience
                         in running a multi-service accounting firm has provided him
                         with a deep understanding of the challenges that accountants,
                         bookkeepers and financial planners face on a daily basis.
-                    </p>
+                    </p> -->
                 </div>
 
             </div>
@@ -532,7 +549,7 @@
         <div class="container">
             <h1 style="text-align:center; padding:50px;color:#4a0466;">Our accounting people are brilliant. Here's why:
             </h1>
-            <div class="row">
+            <div class="row" style="padding-bottom:4rem">
 
                 <div class="col-lg-3 col-md-6 col-sm-12 " style="padding:20px;">
                     <div id="card" style="width:100%;height: 100%; border-radius: 0px;">
@@ -622,26 +639,22 @@
 
 
     <!-----------------------------------activities--------------------------------->
-    <div class="activites-main" style="background-color:white; padding-bottom:2%;">
-        <div class="activities">
-            <div class="container">
-                <h1 class="textcol">people+</h1>
-            </div>
-
+    <div class="page1header2">
+        <div class="container" style="padding:4rem;">
+            <h1 class="textcol">people+</h1>
         </div>
-
     </div>
 
 
     <!-----------------------activites-2------------------------------------------------>
     <div class="activites-2">
         <div class="container">
-            <p style="margin-bottom: 2%;text-align:center ">We take our culture seriously and invest heavily
+            <p style="font-size: 1rem;color:#081a28;">We take our culture seriously and invest heavily
                 to ensure that we maintain and grow an outstanding place to work,
                 for clients and team members alike.</p>
             <h1 style="text-align:center; padding-bottom:2%; font-size: 1rem; color:black">Some of our major activities
                 across the year include:</h1>
-            <div class="row">
+            <div class="row" style="padding:4rem">
 
                 <div class="col-lg-6 col-md-6 col-sm-12 qualification" style="padding:20px;">
                     <div style="background-color:rgb(245, 201, 240);text-align: left;padding: 20px;height: 100%;">
@@ -711,23 +724,26 @@
 
 
     <!------------------------------------------------------------------>
-    <div class="header7" style="background-color:crimson;">
-        <div class="container contain">
+    <div class="header7" style="padding:0%;">
+
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 order-lg-0 order-md-1 order-sm-1 order-last"
-                    style="padding-bottom:0px; text-align:last;align-self:flex-end;">
+                    style="padding-bottom:0px; text-align:center;align-self:flex-end;">
                     <img src="https://toaglobal.com/wp-content/uploads/2021/10/CTA-lady_with_glasses.png.webp"
-                        height="500" style="margin-bottom:0px;">
+                        style="width:90%;max-width:560px;">
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12" id="h5matter" style="padding:50px;">
-                    <h1 style="color:rgb(251, 248, 255);">
+                <div class="col-lg-6 col-md-12 col-sm-12" id="h5matter" style="padding:3rem;align-self: center;">
+                    <h1 style="color:white;">
                         Find out more
                     </h1>
-                    <p style="margin-top: 6%; color: white;">Book a chat at a time that suits you</p>
-                    <button class="buttonstyl md-button strategy-session-trigger"
-                        style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;margin-top:5%"
-                        onclick="toggleForm()"><span>Book a chat</span></button>
+                    <p style="color:rgb(251, 248, 255);padding-bottom:0.8rem;">
+                        Book a chat at a time that suits you</p>
+                    <button class="buttonstyl md-button strategy-session-trigger but"
+                        style="Background-color:rgb(80, 23, 80);" onclick="toggleForm()"><span>Book a
+                            Chat</span></button>
                 </div>
+
             </div>
         </div>
     </div>
@@ -750,28 +766,51 @@
         <div class="container bottom_border">
             <div class="row">
                 <div class="col-md-4 col-sm-6 col-lg-2" style="padding:25px;">
-
                     <a href="index.html"><img src="logoagilel.png" style="width:60%; padding: 0px;"></a>
-                    <p style="font-size: 0.8rem;"><i class="fa fa-location-arrow"></i> Location comes here</p>
-                    <p style="font-size: 0.8rem;"><i class="fa fa-phone-alt "></i> <a href="tel:+1 (408)214-9890"
-                            target="" class="in-grid-item cardClick" data-wpel-link="internal"
-                            style="font-size:0.7rem;color: white;padding:0%;">
-                            +1-(408) 214-9890</a>
-                    </p>
+                    <div style="display:table-row">
+                        <a style="padding:0 0 0.7rem 0.2rem;" class="colr1" href="">
+                            <ion-icon name="logo-instagram" style="width:1.5rem">
+                            </ion-icon>
+                        </a>
 
-                    <p style="font-size: 0.8rem;"><i class="fa fa fa-envelope"></i> <a href="mailto:info@agileac.com"
-                            style="font-size:0.7rem;color: white;padding:0%;">
-                            info@agileac.com </a> </p>
+                        <a style="padding:0" class="colr1" href="">
+                            <ion-icon name="logo-facebook" style="width:1.5rem">
+                            </ion-icon>
+                        </a>
+                        <a style="padding:0 0 0.7rem 0.2rem;" class="colr1"
+                            href="https://www.linkedin.com/company/agile-accounting/" target="_blank">
+                            <ion-icon name="logo-linkedin" style="width:1.5rem">
+                            </ion-icon>
+                        </a>
+                        <a style="padding:0 0 0.7rem 0.2rem;" class="colr1" href="">
+                            <ion-icon name="logo-youtube" style="width:1.5rem">
+                            </ion-icon>
+                        </a>
+                        <a style="padding:0 0 0.7rem 0;" class="colr1" href="https://twitter.com/AgileAccountin1"
+                            target="_blank">
+                            <ion-icon name="logo-twitter" style="width:1.5em">
+                            </ion-icon>
+                        </a>
+                    </div>
+                    <!-- <p style="font-size: 0.8rem;"><i class="fa fa-location-arrow"></i> Location comes here</p>
+          <p style="font-size: 0.8rem;"><i class="fa fa-phone-alt "></i> <a href="tel:+1 (408)214-9890" target=""
+              class="in-grid-item cardClick" data-wpel-link="internal"
+              style="font-size:0.7rem;color: white;padding:0%;">
+              +1-(408) 214-9890</a>
+          </p>
+
+          <p style="font-size: 0.8rem;"><i class="fa fa fa-envelope"></i> <a href="mailto:info@agileac.com"
+              style="font-size:0.7rem;color: white;padding:0%;">
+              info@agileac.com </a> </p> -->
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-6"></div>
 
                 <div class="col-md-4 col-sm-6 col-lg-2">
-                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Company</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Company</h5>
 
                     <ul class="footer_ul_amrc">
                         <li><a style="padding:0px;width: auto;" href="The Agile ac difference.html">The
-                                AGILE
-                                Ac difference</a>
+                                Agile Ac difference</a>
                         </li>
                         <li><a href="meetourtalent.html">Meet our talent</a></li>
                         <li><a href="who_we_are.html">Who we are</a></li>
@@ -781,7 +820,7 @@
 
 
                 <div class="col-md-4 col-sm-6 col-lg-2">
-                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Solutions</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Solutions</h5>
 
                     <ul class="footer_ul_amrc">
                         <li><a href="accountant.html">Accountant</a></li>
@@ -796,26 +835,26 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-lg-2">
-                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Resources</h5>
+                    <h5 class="headin5_amrc col_white_amrc pt2">Resources</h5>
 
                     <ul class="footer_ul_amrc">
                         <li><a href="book a statagy session.html">Book a strategy session</a></li>
                         <li><a href="checklist.html">Outsourcing checklist</a></li>
                         <li><a href="remote accounting team.html">Remote team report</a></li>
-                        <li><a href="">Virtual assistant guide</a></li>
+                        <li><a href="virtualassisantreport.html">Virtual assistant guide</a></li>
                         <li><a href="retainandgrow.html">Retain and grow talent guide</a></li>
                         <li><a href="scaleandgrow.html">Scale and grow your accounting firm</a></li>
                     </ul>
 
                 </div>
                 <div class="col-md-4 col-sm-6 col-lg-2">
-                    <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">
+                    <h5 class="headin5_amrc col_white_amrc pt2">
                         Agile Accounting Links
                     </h5>
 
                     <ul class="footer_ul_amrc">
                         <li><a href=""><i class='fas fa-external-link-alt'></i> Ab² Institute of accounting</a></li>
-                        <li><a href=""><i class='fas fa-external-link-alt'></i> AGILE Ac careers</a></li>
+                        <li><a href=""><i class='fas fa-external-link-alt'></i> Agile careers</a></li>
                     </ul>
                 </div>
 
@@ -826,31 +865,27 @@
 
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
-                    <p class=" text-center flo" style="font-size: 0.7rem;">All Rights Reserved Agile Accounting @2022
+                    <p class=" text-center flo" style="font-size: 0.7rem;padding-top:0.5rem">&copy; All Rights Reserved
+                        Agile
+                        Accounting
+                        @2022
                     </p>
                 </div>
                 <div class="col-lg-6 col-sm-12" style="float:flex-end;">
                     <a href=" privacypolicy.html" class="text-center"
-                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Privacy
+                        style="font-size: 0.7rem;font-weight: bold;;padding:0%;padding-right:10px;color: white;">Privacy
                         policy</a>
                     <a href="Accessibility Statement.html" class="text-center"
-                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Accessibility
+                        style="font-size: 0.7rem;font-weight: bold;;padding:0%;padding-right:10px;color: white;">Accessibility
                         statement</a>
                     <a href="contact us.html" class="text-center"
-                        style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Contact
+                        style="font-size: 0.7rem;font-weight: bold;padding:0%;padding-right:10px;color: white;">Contact
                         us</a>
                     <a href="Terms of Use.html" class="text-center"
-                        style="font-size: 0.7rem;padding:0%;color: white;">Terms of
+                        style="font-size: 0.7rem;font-weight: bold;padding:0%;color: white;">Terms of
                         use</a>
                 </div>
             </div>
-            <ul class="social_footer_ul">
-                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/agile-accounting/"><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            </ul>
 
         </div>
     </footer>
@@ -873,7 +908,6 @@
             .addEventListener('click', classtoggle);
     </script>
     <script src="form.js"></script>
-
     <script>
         // drowdown open and close on click
 
@@ -909,7 +943,8 @@
             }
         }
     </script>
-
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
