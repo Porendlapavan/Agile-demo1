@@ -364,21 +364,11 @@
   line-height: 1.4rem;
 }
 
-/* #card:hover {
-  -ms-transform: scale(1.02); */
-/* IE 9 */
-/* -webkit-transform: scale(1.02); */
-/* Safari 3-8 */
-/* transform: scale(1.02); */
-
-/* } */
-
 .text a:hover {
   color: #fff;
   text-decoration: none;
   color: #4a0466;
   font-weight: 400;
-  /* font-style: normal; */
 }
 
 .text2 :hover {
@@ -391,15 +381,14 @@
   text-decoration: none;
   color: black;
   font-weight: 400;
-  /* font-style: normal; */
 }
 
 /* last cards */
-#lastcards {
+/* #lastcards {
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
-}
+} */
 
 /* header 5 */
 .header5 {
@@ -1326,7 +1315,7 @@ body.activeForm .overlay-form {
 .qualification div {
   background-color: #f0cbe6;
   /* box-shadow: 5px 5px 20px rgb(58 56 146 / 15%) !important; */
-  box-shadow: 1px 10px 30px rgb(58 56 146 / 15%) !important;
+  box-shadow: 1px 10px 30px rgb(58 56 146 / 20%) !important;
 }
 
 .qualification h1 {
