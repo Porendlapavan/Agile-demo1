@@ -320,7 +320,7 @@
   background-position: top center;
   position: absolute;
   background-repeat: repeat;
-  opacity: 0.1;
+  opacity: 0.15;
 }
 
 .header4 h1 {
@@ -335,6 +335,7 @@
   margin-bottom: 50px;
   background-color: white;
   font-family: serif;
+  box-shadow: 1px 10px 30px rgb(58 56 146 / 15%) !important;
 
 }
 
@@ -1324,7 +1325,8 @@ body.activeForm .overlay-form {
 
 .qualification div {
   background-color: #f0cbe6;
-  box-shadow: 5px 5px 20px rgb(58 56 146 / 15%) !important;
+  /* box-shadow: 5px 5px 20px rgb(58 56 146 / 15%) !important; */
+  box-shadow: 1px 10px 30px rgb(58 56 146 / 15%) !important;
 }
 
 .qualification h1 {
