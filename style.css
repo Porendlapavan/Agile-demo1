@@ -323,6 +323,18 @@
   opacity: 0.2;
 }
 
+.page1header2 {
+  background-color: white;
+  text-align: center;
+  background-image: url("https://toaglobal.com/wp-content/uploads/2021/07/pink-lightbulb-2.png.webp");
+  background-position: center;
+  background-size: 191px 202px;
+  background-repeat: no-repeat;
+  padding: 10vw;
+  padding-top: 55px;
+  padding-bottom: 45px;
+}
+
 .header4 h1 {
   font-family: chewi;
 }
