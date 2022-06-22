@@ -540,6 +540,8 @@ footer p {
   display: block;
   width: fit-content;
   padding-bottom: 10px;
+  font-family: chewi;
+  font-weight: 300;
 }
 
 .headin5_amrc {
