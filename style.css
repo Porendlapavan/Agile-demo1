@@ -523,7 +523,9 @@ footer p {
   margin-bottom: 8px;
   font-weight: bold;
 }
-
+footer img{
+  text-align:left;
+}
 .mb10 {
   padding-bottom: 15px;
 }
