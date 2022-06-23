@@ -79,6 +79,11 @@
             line-height: 3.5rem; */
         }
 
+        .pagination ul li.numb:hover {
+            background-color: crimson;
+            color: white;
+        }
+
         .pagination ul li.numb {
             list-style: none;
             height: 45px;
@@ -100,6 +105,12 @@
         #card {
             box-shadow: 1px 10px 30px rgb(58 56 146 / 15%) !important;
         }
+
+        /* .backg {
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: -1px 5px 20px rgb(58 56 146 / 40%) !important;
+        } */
     </style>
 
 
@@ -544,10 +555,11 @@
 
 
     <!-------------------------------------PAGINATION------------------------------->
+
     <div>
         <div class="pagination justify-content-center container">
-            <ul>
-                <li class="prev ">prev</li>
+            <ul class="act1">
+                <li class="prev">prev</li>
                 <li class="numb">1</li>
                 <li class="numb">2</li>
                 <li class="numb">3</li>
@@ -558,7 +570,7 @@
         </div>
     </div>
 
-
+    <div class="act"></div>
     <!-- connecting pages nav bar -->
     <div style=" background-color: #66058c;">
         <div class="container">
@@ -706,6 +718,18 @@
             .addEventListener('click', classtoggle);
     </script>
     <script src="form.js"></script>
+    <!-- <script>
+        var act1 = document.querySelector(".act1").children;
+        console.log(act1);
+        for (var i = 0; i < act1.length; i++) {
+            act1[i].addEventListener("click", function () {
+                // console.log(numbbutton[i].innerText);
+                // index = numbbutton[i].innerText;
+                // showitems();
+                act1[i].classList.add(".act");
+            })
+        }
+    </script> -->
 </body>
 
 </html>

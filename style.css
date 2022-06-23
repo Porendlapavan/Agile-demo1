@@ -448,8 +448,9 @@
 
 #h6image {
   justify-content: center;
-  width: 100%;
+  width: 40%;
   max-width: 370px;
+  opacity: 0.7;
 }
 
 #h6matter {

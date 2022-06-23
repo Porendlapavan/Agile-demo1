@@ -16,6 +16,9 @@ var totalpages = Math.ceil(totalblogs / blogsperpage);
 
 
 
+
+
+
 ////////////////////////////////Functionality of various blogs on different pages////////////////////////////
 var numbbutton = document.querySelectorAll(".numb");
 console.log(numbbutton);
