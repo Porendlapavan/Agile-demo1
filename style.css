@@ -1240,6 +1240,18 @@ a:hover {
   outline: none;
 }
 
+.overlay-form select {
+  align-items: center;
+  height: 1.7rem;
+  background-color: #ddd;
+  width: 100%;
+  padding: 6px;
+  font-size: 0.7rem;
+  color: rgb(12, 10, 10);
+  border: 0.5px solid rgb(17, 15, 15);
+  outline: none;
+}
+
 @media screen and (max-width:1024px) {
   .overlay-form {
     position: fixed;
