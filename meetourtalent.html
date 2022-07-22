@@ -1,55 +1,6 @@
 <!DOCTYPE html>
 <html>
-<!-- -------------------g form------------------- -->
-<div class="overlay-form" style=" -webkit-background-composite: padding;">
-    <div class="over1" style="padding: 15px;">
-        <div style="text-align:center">
-            <h1 style="font-weight:bold;">Book a chat</h1>
-            <p>To find out how agile-accounting can assist your firm, please enter your details and one
-                of our local
-                account
-                managers
-                will contact you at a time that suits your schedule.</p>
-        </div>
-        <form name="google-sheet">
-            <div class="close-btn" onclick="toggleForm()">&times;</div>
-            <div class="form-element">
-                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
 
-                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
-            </div>
-            <div class="form-element">
-                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
-
-                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
-            </div>
-            <div class="form-element">
-                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
-
-                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
-            </div>
-            <div class="form-element">
-                <label>Phone number:<span class="input-icon"><i class="fa fa-phone-alt"></i></span></label>
-
-                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
-            </div>
-            <div class="form-element">
-                <label>Role interested:<span class="input-icon"></span></label>
-                <select id="inputState" name="Role" class="form-control">
-                    <option disabled selected hidden>Select role</option>
-                    <option>Accountant</option>
-                    <option>Bookkeeper</option>
-                    <option>Cpa</option>
-                    <option>Administrator</option>
-                    <option>Virtual Assistant</option>
-                </select>
-            </div>
-            <div class="form-element ">
-                <button>Book a chat</button>
-            </div>
-        </form>
-    </div>
-</div>
 
 <head>
     <meta charset="UTF-8">
@@ -101,6 +52,56 @@
         }
     </style>
 </head>
+<!-- -------------------g form------------------- -->
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+    <div class="over1" style="padding: 15px;">
+        <div style="text-align:center">
+            <h1 style="font-weight:bold;">Book a chat</h1>
+            <p>To find out how agile-accounting can assist your firm, please enter your details and one
+                of our local
+                account
+                managers
+                will contact you at a time that suits your schedule.</p>
+        </div>
+        <form name="google-sheet">
+            <div class="close-btn" onclick="toggleForm()">&times;</div>
+            <div class="form-element">
+                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+            </div>
+            <div class="form-element">
+                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+                <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+            </div>
+            <div class="form-element">
+                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+                <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+            </div>
+            <div class="form-element">
+                <label>Phone number:<span class="input-icon"><i class="fa fa-phone-alt"></i></span></label>
+
+                <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+            </div>
+            <div class="form-element">
+                <label>Role interested:<span class="input-icon"></span></label>
+                <select id="inputState" name="Role" class="form-control">
+                    <option disabled selected hidden>Select role</option>
+                    <option>Accountant</option>
+                    <option>Bookkeeper</option>
+                    <option>Cpa</option>
+                    <option>Administrator</option>
+                    <option>Virtual Assistant</option>
+                </select>
+            </div>
+            <div class="form-element ">
+                <button>Book a chat</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 <body>
     <div style="background-color:#4a0466;height: 1.56rem;"></div>
